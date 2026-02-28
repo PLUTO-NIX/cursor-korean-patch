@@ -1,0 +1,112 @@
+---
+description: Cursor Settings 한글 패치/재패치 작업 지침
+globs:
+  - "**/*.py"
+  - "**/*.json"
+  - "**/*.sh"
+  - "**/*.js"
+alwaysApply: false
+---
+
+# Cursor Settings 한글 패치 에이전트 지침
+
+사용자가 "재패치", "한글 패치", "커서 번역", "repatch" 등을 요청하면 이 지침을 따릅니다.
+
+## 아키텍처: 하이브리드 번역 (소스 패치 + 런타임 DOM 번역)
+
+이 프로젝트는 두 가지 번역 방식을 조합합니다:
+
+1. **소스 패치** (`translations/ko.json`): JS 파일의 정적 문자열을 직접 치환 → 깜박임 없음
+2. **런타임 번역** (`translations/runtime_ko.json`): 소스 패치로 처리할 수 없는 동적 문자열을 MutationObserver로 DOM에서 실시간 번역
+
+소스 패치가 1순위이며, 런타임은 보완용입니다.
+
+## 전체 워크플로우
+
+### Step 1: 통합 스크립트로 추출 + 하이브리드 패치 적용
+
+```bash
+cd cursor-korean-patch
+python3 src/repatch.py
+```
+
+이 명령은:
+- 이전 패치 복원
+- 새 버전 문자열 추출 → `translations/strings.json`
+- 미번역 문자열 감지 → `translations/untranslated.json`
+- 소스 패치(`translations/ko.json`) 적용
+- 런타임 번역(`translations/runtime_ko.json`) JS 주입
+
+### Step 2: 미번역 문자열이 있으면 번역
+
+`translations/untranslated.json`을 읽고, 각 문자열을 한국어로 번역합니다.
+
+- **정적 문자열** (따옴표 안 문자열, 속성값 등) → `translations/ko.json`의 `translations` 배열에 추가
+- **동적 문자열** (변수 포함, DOM에서만 보이는 텍스트) → `translations/runtime_ko.json`의 `entries` 배열에 추가
+
+소스 패치 형식 (`ko.json`):
+```json
+{"original": "영어 원문 그대로", "translated": "한국어 번역", "match_type": "exact_quoted"}
+```
+
+런타임 번역 형식 (`runtime_ko.json`):
+```json
+{"en": "영어 원문", "ko": "한국어 번역", "type": "exact"}
+```
+- `type`: `exact` (전체 일치), `partial` (부분 포함), `regex` (정규식)
+
+### Step 3: 번역 추가 후 재패치
+
+```bash
+python3 src/repatch.py --translate-and-patch
+```
+
+### Step 4: 사용자에게 Cursor 재시작 안내
+
+## 번역 규칙
+
+- `original`/`en`은 원본 텍스트와 **완전히 동일**해야 함
+- 기술 용어 보존: API, MCP, Git, GitHub, PR, IDE, TypeScript, Python 등
+- `${...}` 변수 플레이스홀더는 그대로 유지
+- 합쇼체(-습니다) 사용
+- 용어 일관성: Agent=에이전트, Settings=설정, Review=리뷰, Sandbox=샌드박스, Allowlist=허용 목록, Workspace=워크스페이스, Dashboard=대시보드
+
+## 런타임 번역 추가 기준
+
+다음 경우에 `runtime_ko.json`에 추가:
+- 동적 문자열 (`${변수}` 포함 문장의 고정 부분)
+- **단어 하나짜리** (Open, Cancel, Default, Apply 등) — 소스 패치 시 파일 전체에서 수백 번 치환되어 코드 깨짐
+- JS 코드 생성 후 DOM에 렌더링되는 텍스트
+- 소스 패치 `not_found`로 처리 실패한 문자열
+
+## 원문 정확성 (소스 패치 실패 시)
+
+- `not_found` 발생 시: `workbench.desktop.main.js.bak`에서 `rg "문자열"` 또는 Python으로 **정확한 형태** 검색
+- 마침표 유무, 공백, 따옴표가 JS 원본과 **완전히 일치**해야 매칭됨
+- `TRANSLATE_PROMPT.md` 참고
+
+## 빠른 재패치 (번역 변경 없이 기존 번역만 적용)
+
+```bash
+cd cursor-korean-patch
+python3 src/repatch.py
+```
+
+## 원본 복원
+
+```bash
+python3 src/patch.py --revert
+```
+
+## 주의사항
+
+- 스크립트 실행 시 `--required_permissions: ["all"]` 필요 (Cursor 앱 파일 수정)
+- 패치 적용 후 반드시 Cursor 재시작 필요
+- `translations/ko.json`, `translations/runtime_ko.json` 모두 버전 관리(git)에 포함
+- 상세 번역 규칙·용어집·주의사항: `TRANSLATE_PROMPT.md` 참고
+
+## 플랫폼
+
+- **macOS / Windows** 지원. Cursor 경로는 자동 탐지됨.
+- Windows: `%LOCALAPPDATA%\Programs\Cursor\resources\app` 또는 `%ProgramFiles%\Cursor\resources\app`
+- 자동 탐지 실패 시: `python3 src/repatch.py --cursor-path /경로` 사용

@@ -1,0 +1,450 @@
+{
+  "version": "2.5.26",
+  "total": 74,
+  "strings": [
+    {
+      "text": "${2:label}",
+      "key": "dropdown.2_label",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "OK",
+      "key": "dropdown.ok",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "loud",
+      "key": "dropdown.loud",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "op",
+      "key": "dropdown.op",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "quiet",
+      "key": "dropdown.quiet",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "unspecified",
+      "key": "dropdown.unspecified",
+      "category": "dropdown_item",
+      "context": "Dropdown/select item label"
+    },
+    {
+      "text": "Accept the next word of a suggestion via ${n.keybindingService.lookupKeybinding(\"editor.action.inlineSuggest.acceptNextWord\")?.getLabel()??\"Alt+]\"}",
+      "key": "getter.accept_the_next_word_of_a_suggestion_via_n_keybi",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Apply .cursorignore files to all subdirectories${n.reactiveStorageService.applicationUserPersistentStorage.teamAdminSettings?.cursorIgnore?.hierarchicalEnabled?\" (controlled by admin)\":\"\"}. Changing this setting will require a restart of Cursor.",
+      "key": "getter.apply_cursorignore_files_to_all_subdirectories_n",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Command Denylist${a().isAdminControlled?\"\":\" (Deprecated)\"}",
+      "key": "getter.command_denylist_a_isadmincontrolled_depr",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Commands that can run automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.commands_that_can_run_automatically_a_isadminco",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Commands that can't run automatically${a().isAdminControlled?\"\":\" - DEPRECATED\"}${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.commands_that_can_t_run_automatically_a_isadmin",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "MCP tools that can run automatically. Format: 'server:tool', 'server:*' for all tools from a server, '*:tool' for a tool from any server, or *:* for all tools from all servers${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.mcp_tools_that_can_run_automatically_format_ser",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Prevent Agent from automatically running Browser tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.prevent_agent_from_automatically_running_browser_t",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Prevent Agent from automatically running MCP tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.prevent_agent_from_automatically_running_mcp_tools",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Prevent Agent from creating or modifying files outside of the workspace automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.prevent_agent_from_creating_or_modifying_files_out",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Prevent Agent from deleting files automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.prevent_agent_from_deleting_files_automatically_a",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Verify extension signatures when installing and loading extensions. May require an editor restart to take effect.${t()?\" (controlled by admin)\":\"\"}",
+      "key": "getter.verify_extension_signatures_when_installing_and_lo",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "\\u26A0\\uFE0F Use with caution. Skip symlinks during .cursorignore file discovery. Only enable if your repository has many symlinks and all .cursorignore files are reachable without them${n.reactiveStorageService.applicationUserPersistentStorage.teamAdminSettings?.cursorIgnore?.ignoreSymlinks?\" (controlled by admin)\":\"\"}. Changing this setting will require a restart of Cursor.",
+      "key": "getter.u26a0_ufe0f_use_with_caution_skip_symlinks_durin",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "(Request ID:",
+      "key": "template.request_id",
+      "category": "oe_template",
+      "context": "HTML template text: <...>(Request ID:<...>"
+    },
+    {
+      "text": "$ / $ included usage",
+      "key": "template_full.included_usage",
+      "category": "oe_template_full",
+      "context": "Full template text (tags removed)"
+    },
+    {
+      "text": "$ / $ on-demand usage",
+      "key": "template_full.on_demand_usage",
+      "category": "oe_template_full",
+      "context": "Full template text (tags removed)"
+    },
+    {
+      "text": "$(radio-tower) ${i}",
+      "key": "prop.radio_tower_i",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "(Settings) ${path}",
+      "key": "prop.settings_path",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "About ${pe}",
+      "key": "prop.about_pe",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Add",
+      "key": "prop.add",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Agent",
+      "key": "prop.agent",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Always",
+      "key": "prop.always",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Apply",
+      "key": "prop.apply",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Applying",
+      "key": "prop.applying",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to delete \"${R.name}\"?",
+      "key": "prop.are_you_sure_you_want_to_delete_r_name",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to delete \"${W}\"? This action cannot be undone.",
+      "key": "prop.are_you_sure_you_want_to_delete_w_this_actio",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to delete \"${a}\"? This action cannot be undone.",
+      "key": "prop.are_you_sure_you_want_to_delete_a_this_actio",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to delete \"${d}\"? This action cannot be undone.",
+      "key": "prop.are_you_sure_you_want_to_delete_d_this_actio",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to delete \"${f}\"? This action cannot be undone.",
+      "key": "prop.are_you_sure_you_want_to_delete_f_this_actio",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Are you sure you want to remove the model \"${at.clientDisplayName??at.name}\"? You can add it back later.",
+      "key": "prop.are_you_sure_you_want_to_remove_the_model_at_cl",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Auto",
+      "key": "prop.auto",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Automatically import necessary modules for ${r}",
+      "key": "prop.automatically_import_necessary_modules_for_r",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Automatically jump to the next diff when accepting changes with ${Rs?\"\\u2318\":\"Ctrl+\"}Y",
+      "key": "prop.automatically_jump_to_the_next_diff_when_accepting",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Automatically parse links when pasted into Quick Edit (${Rs?\"\\u2318\":\"Ctrl+\"}K) input",
+      "key": "prop.automatically_parse_links_when_pasted_into_quick_e",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Cancel",
+      "key": "prop.cancel",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Chat exported to ${K.fsPath}",
+      "key": "prop.chat_exported_to_k_fspath",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Choose the visibility level for snapshot ${n.snapshotId}:",
+      "key": "prop.choose_the_visibility_level_for_snapshot_n_snaps",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Command '${p}' created successfully in ${P} commands directory: ${F.fsPath}",
+      "key": "prop.command_p_created_successfully_in_p_comman",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Confirm",
+      "key": "prop.confirm",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Copy ${v.baseBranch}",
+      "key": "prop.copy_v_basebranch",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Decline",
+      "key": "prop.decline",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Default",
+      "key": "prop.default",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Delete",
+      "key": "prop.delete",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Development",
+      "key": "prop.development",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Disable",
+      "key": "prop.disable",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Enable",
+      "key": "prop.enable",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Keep",
+      "key": "prop.keep",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Large",
+      "key": "prop.large",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Local",
+      "key": "prop.local",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Never",
+      "key": "prop.never",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Open",
+      "key": "prop.open",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Please try again. Request ID: ${$}",
+      "key": "prop.please_try_again_request_id",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Preview Box for Terminal ${Rs?\"\\u2318\":\"Ctrl+\"}K",
+      "key": "prop.preview_box_for_terminal_rs_u2318_ctrl_k",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Projects",
+      "key": "prop.projects",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Public",
+      "key": "prop.public",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Reverting will also affect ${i.size} change${i.size>1?\"s\":\"\"} from other chat${r.size>1?\"s\":\"\"}.",
+      "key": "prop.reverting_will_also_affect_i_size_change_i_siz",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Rule '${p}' created successfully in ${P} rules directory: ${F.fsPath}",
+      "key": "prop.rule_p_created_successfully_in_p_rules_dir",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Show a hint for ${Rs?\"\\u2318\":\"Ctrl+\"}K in the Terminal",
+      "key": "prop.show_a_hint_for_rs_u2318_ctrl_k_in_the_ter",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Small",
+      "key": "prop.small",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Submit with ${Rs?\"\\u2318 + \":\"Ctrl + \"}Enter",
+      "key": "prop.submit_with_rs_u2318_ctrl_enter",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "The snapshot ${g.snapshot} will be shared with anyone who has write permissions to ${v} on GitHub.",
+      "key": "prop.the_snapshot_g_snapshot_will_be_shared_with_any",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "The snapshot ${n.snapshotId} will be made PUBLIC and accessible to anyone on the internet.",
+      "key": "prop.the_snapshot_n_snapshotid_will_be_made_public_a",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "The snapshot ${n.snapshotId} will be shared with anyone who has write permissions to ${m} on GitHub.",
+      "key": "prop.the_snapshot_n_snapshotid_will_be_shared_with_a",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "This will delete the project \"${D.name}\" and all its attached composers.",
+      "key": "prop.this_will_delete_the_project_d_name_and_all_i",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Unknown error (type ${n?.constructor?.name??typeof n}): ${String(n)}",
+      "key": "prop.unknown_error_type_n_constructor_name_typeof",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "When enabled, ${Rs?\"\\u2318 + \":\"Ctrl + \"}Enter submits chat and Enter inserts a newline",
+      "key": "prop.when_enabled_rs_u2318_ctrl_enter_sub",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "[patch-graph] File content mismatch after reload: ${o.fileUri.fsPath}",
+      "key": "prop.patch_graph_file_content_mismatch_after_reload",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Run Everything",
+      "key": "return.run_everything",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Taking longer than expected\\u2026",
+      "key": "return.taking_longer_than_expected_u2026",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    }
+  ]
+}
