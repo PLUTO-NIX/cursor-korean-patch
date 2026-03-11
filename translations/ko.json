@@ -1,5 +1,5 @@
 {
-  "version": "2.5.20",
+  "version": "2.6.18",
   "locale": "ko-KR",
   "translations": [
     {
@@ -258,11 +258,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Chat Takes Center Stage",
-      "translated": "채팅을 중앙에 표시",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Choose the default layout for new windows and workspaces",
       "translated": "새 창 및 워크스페이스의 기본 레이아웃을 선택합니다",
       "match_type": "exact_quoted"
@@ -468,26 +463,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Cloud agents clone your repository from GitHub.",
-      "translated": "클라우드 에이전트는 GitHub에서 저장소를 클론합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Configure environment settings and secrets",
-      "translated": "환경 설정 및 시크릿을 구성합니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Configure tools and runtimes for the agent's machine.",
-      "translated": "에이전트 머신의 도구와 런타임을 설정합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Base Environment",
-      "translated": "기본 환경",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "These secrets are injected as environment variables into the background agent's environment.",
       "translated": "이 시크릿은 환경 변수로 백그라운드 에이전트 환경에 주입됩니다.",
       "match_type": "exact_quoted"
@@ -525,11 +500,6 @@
     {
       "original": "Choose between quick or more thorough, higher-cost analysis",
       "translated": "빠른 분석과 더 철저하지만 비용이 높은 분석 중 선택합니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Connect GitHub, manage team and user settings, and more",
-      "translated": "GitHub 연결, 팀 및 사용자 설정 관리 등",
       "match_type": "exact_quoted"
     },
     {
@@ -673,11 +643,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Unsaved.",
-      "translated": "저장되지 않음.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Confirm search",
       "translated": "검색 확인",
       "match_type": "exact_quoted"
@@ -793,11 +758,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Exceeding total tools limit",
-      "translated": "총 도구 제한 초과",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Add Custom MCP",
       "translated": "커스텀 MCP 추가",
       "match_type": "exact_quoted"
@@ -825,16 +785,6 @@
     {
       "original": " (managed by team admin)",
       "translated": "(팀 관리자가 관리)",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Open a folder to use Cloud Agent",
-      "translated": "클라우드 에이전트를 사용하려면 폴더를 엽니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Cloud agents require a workspace folder to be opened to configure environment settings and run properly.",
-      "translated": "클라우드 에이전트는 환경 설정을 구성하고 제대로 실행하려면 워크스페이스 폴더를 열어야 합니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -873,23 +823,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Android Emulator",
-      "translated": "Android 에뮬레이터",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Android Emulator MCP",
-      "translated": "Android 에뮬레이터 MCP",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Applying changes locally. This may take a few seconds.",
       "translated": "변경 사항을 로컬에 적용하고 있습니다. 몇 초 정도 걸릴 수 있습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Applying changes locally…",
-      "translated": "변경 사항을 로컬에 적용하고 있습니다…",
       "match_type": "exact_quoted"
     },
     {
@@ -925,16 +860,6 @@
     {
       "original": "Cannot resolve authority",
       "translated": "권한을 확인할 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Change Snapshot Visibility",
-      "translated": "스냅샷 공개 범위 변경",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Checking out branch…",
-      "translated": "브랜치를 체크아웃하고 있습니다…",
       "match_type": "exact_quoted"
     },
     {
@@ -1008,16 +933,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Create Empty Project",
-      "translated": "빈 프로젝트 만들기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Create New Project",
-      "translated": "새 프로젝트 만들기",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Create PR",
       "translated": "PR 만들기",
       "match_type": "exact_quoted"
@@ -1045,11 +960,6 @@
     {
       "original": "Custom keywords that trigger auto-submit in voice mode. Only single words (no spaces) are allowed. Punctuation and capitalization are ignored.",
       "translated": "음성 모드에서 자동 제출을 트리거하는 사용자 지정 키워드입니다. 단일 단어(공백 없음)만 허용됩니다. 구두점과 대소문자는 무시됩니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Dashboard MCP Servers",
-      "translated": "대시보드 MCP 서버",
       "match_type": "exact_quoted"
     },
     {
@@ -1088,23 +998,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Delete Project",
-      "translated": "프로젝트 삭제",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Delete Project?",
-      "translated": "프로젝트를 삭제하시겠습니까?",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Delete chat",
       "translated": "채팅 삭제",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Detach from Project",
-      "translated": "프로젝트에서 분리",
       "match_type": "exact_quoted"
     },
     {
@@ -1178,16 +1073,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Enable MCP tools for controlling the Android Emulator. Provides screenshot, tap, swipe, type, and UI hierarchy snapshot tools for agent interaction with Android apps.",
-      "translated": "Android 에뮬레이터를 제어하기 위한 MCP 도구를 활성화합니다. 에이전트가 Android 앱과 상호작용할 수 있도록 스크린샷, 탭, 스와이프, 입력 및 UI 계층 구조 스냅샷 도구를 제공합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Enable MCP tools for controlling the iOS Simulator. Provides screenshot, tap, swipe, type, and accessibility snapshot tools for agent interaction with iOS apps.",
-      "translated": "iOS 시뮬레이터를 제어하기 위한 MCP 도구를 활성화합니다. 에이전트가 iOS 앱과 상호작용할 수 있도록 스크린샷, 탭, 스와이프, 입력 및 접근성 스냅샷 도구를 제공합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Enable Run Everything",
       "translated": "모두 실행 활성화",
       "match_type": "exact_quoted"
@@ -1220,11 +1105,6 @@
     {
       "original": "Error deleting server",
       "translated": "서버 삭제 중 오류가 발생했습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Every time a new cloud agent is created, it will check out the appropriate commit, and then run the install script followed by the start script and terminals.",
-      "translated": "새 클라우드 에이전트가 생성될 때마다 해당 커밋을 체크아웃한 후, 설치 스크립트와 시작 스크립트 및 터미널을 순서대로 실행합니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -1323,11 +1203,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Focus the editor or terminal for edits and commands when you need them, return to chat when you don't.",
-      "translated": "편집이나 명령이 필요할 때는 에디터 또는 터미널에 포커스하고, 필요 없을 때는 채팅으로 돌아갑니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Force View Zones",
       "translated": "뷰 영역 강제 표시",
       "match_type": "exact_quoted"
@@ -1343,16 +1218,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "From plugins imported to Cursor from third-party tools",
-      "translated": "서드파티 도구에서 Cursor로 가져온 플러그인",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Full Editor, When You Need It",
-      "translated": "필요할 때 사용하는 풀 에디터",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Full Local",
       "translated": "완전 로컬",
       "match_type": "exact_quoted"
@@ -1360,16 +1225,6 @@
     {
       "original": "Get Started",
       "translated": "시작하기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Get Started with Agents",
-      "translated": "에이전트 시작하기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "GitHub Access",
-      "translated": "GitHub 액세스",
       "match_type": "exact_quoted"
     },
     {
@@ -1385,16 +1240,6 @@
     {
       "original": "Give Feedback",
       "translated": "피드백 보내기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Go to Web App",
-      "translated": "웹 앱으로 이동",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Grind Web Agent",
-      "translated": "Grind 웹 에이전트",
       "match_type": "exact_quoted"
     },
     {
@@ -1475,11 +1320,6 @@
     {
       "original": "Invite Team Members",
       "translated": "팀 멤버 초대",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Jump between concurrent Agents to parallelize active tasks and maintain flow.",
-      "translated": "동시 실행 중인 에이전트 간에 전환하여 활성 작업을 병렬화하고 흐름을 유지합니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -1578,28 +1418,13 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Make Public",
-      "translated": "공개로 설정",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Make escape focus editor instead of closing the prompt bar",
       "translated": "프롬프트 바를 닫는 대신 Escape 키로 에디터에 포커스합니다",
       "match_type": "exact_quoted"
     },
     {
-      "original": "Make snapshot public?",
-      "translated": "스냅샷을 공개하시겠습니까?",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Manage Account",
       "translated": "계정 관리",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Manage Multiple Agents",
-      "translated": "다중 에이전트 관리",
       "match_type": "exact_quoted"
     },
     {
@@ -1610,11 +1435,6 @@
     {
       "original": "Manage your account and billing",
       "translated": "계정 및 결제를 관리합니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Mark Agent commits as co-authored with Cursor",
-      "translated": "에이전트 커밋을 Cursor와 공동 작성으로 표시합니다",
       "match_type": "exact_quoted"
     },
     {
@@ -1700,11 +1520,6 @@
     {
       "original": "New Chat",
       "translated": "새 채팅",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No Dashboard MCP Servers",
-      "translated": "대시보드 MCP 서버 없음",
       "match_type": "exact_quoted"
     },
     {
@@ -1828,11 +1643,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Parallel Agents",
-      "translated": "병렬 에이전트",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Partial Accepts",
       "translated": "부분 수락",
       "match_type": "exact_quoted"
@@ -1865,11 +1675,6 @@
     {
       "original": "Privacy Mode Enabled",
       "translated": "개인정보 보호 모드 활성화됨",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Private to you",
-      "translated": "나만 볼 수 있음",
       "match_type": "exact_quoted"
     },
     {
@@ -1958,11 +1763,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Review all pending and accepted Agent changes in one unified interface.",
-      "translated": "보류 중인 변경 사항과 수락된 에이전트 변경 사항을 하나의 통합 인터페이스에서 리뷰합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Review this command content carefully before proceeding",
       "translated": "계속하기 전에 이 명령 내용을 주의 깊게 검토하세요",
       "match_type": "exact_quoted"
@@ -1978,33 +1778,13 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Run up to 8 Agents or models at the same time and choose the best outcome.",
-      "translated": "최대 8개의 에이전트 또는 모델을 동시에 실행하고 최상의 결과를 선택합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Running Capabilities",
       "translated": "실행 기능",
       "match_type": "exact_quoted"
     },
     {
-      "original": "Runtime Configuration",
-      "translated": "런타임 설정",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Sandbox debug logging enabled",
       "translated": "샌드박스 디버그 로깅이 활성화되었습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Secrets are used to store sensitive information that should not be committed to the repository.",
-      "translated": "시크릿은 저장소에 커밋하면 안 되는 민감한 정보를 저장하는 데 사용됩니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "See warnings and tips that you’ve hidden",
-      "translated": "숨긴 경고 및 팁을 확인합니다",
       "match_type": "exact_quoted"
     },
     {
@@ -2023,23 +1803,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Set high-level direction and delegate manual tasks — all while maintaining the full power of the IDE.",
-      "translated": "높은 수준의 방향을 설정하고 수동 작업을 위임합니다 — IDE의 모든 기능을 유지하면서.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Share Transcript",
       "translated": "대화 내용 공유",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Share snapshot with repo collaborators?",
-      "translated": "저장소 공동 작업자와 스냅샷을 공유하시겠습니까?",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Share with repo collaborators",
-      "translated": "저장소 공동 작업자와 공유",
       "match_type": "exact_quoted"
     },
     {
@@ -2120,11 +1885,6 @@
     {
       "original": "Status Bar",
       "translated": "상태 표시줄",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Stay focused on the conversation at hand with an interface purpose-built for working with Agent.",
-      "translated": "에이전트와 함께 작업하기 위해 특별히 설계된 인터페이스로 현재 대화에 집중합니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -2283,11 +2043,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Unified Review",
-      "translated": "통합 리뷰",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Update Access",
       "translated": "액세스 업데이트",
       "match_type": "exact_quoted"
@@ -2300,11 +2055,6 @@
     {
       "original": "Usage-Based Pricing",
       "translated": "사용량 기반 요금제",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Usage-based pricing is required to run cloud agents.",
-      "translated": "클라우드 에이전트를 실행하려면 사용량 기반 요금제가 필요합니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -2353,11 +2103,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "We recommend committing the setup file to share it with anyone else who works on this repo.",
-      "translated": "이 저장소에서 작업하는 다른 사람들과 공유할 수 있도록 설정 파일을 커밋하는 것을 권장합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "When enabled, all windows share the same layout",
       "translated": "활성화하면 모든 창이 동일한 레이아웃을 공유합니다",
       "match_type": "exact_quoted"
@@ -2385,16 +2130,6 @@
     {
       "original": "Workspace Configuration",
       "translated": "워크스페이스 설정",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "iOS Simulator",
-      "translated": "iOS 시뮬레이터",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "iOS Simulator MCP",
-      "translated": "iOS 시뮬레이터 MCP",
       "match_type": "exact_quoted"
     },
     {
@@ -2653,11 +2388,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Reset \"Don’t Ask Again\" Dialogs",
-      "translated": "\"다시 묻지 않음\" 대화 상자 초기화",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Choose how Agent runs tools like command execution, MCP, and file writes. Tools will auto-run in a sandbox if possible. If not, they will respect the allowlist or ask for approval.",
       "translated": "에이전트가 명령 실행, MCP, 파일 쓰기 등의 도구를 실행하는 방식을 선택합니다. 가능한 경우 도구가 샌드박스에서 자동 실행됩니다. 그렇지 않으면 허용 목록을 따르거나 승인을 요청합니다.",
       "match_type": "exact_quoted"
@@ -2695,11 +2425,6 @@
     {
       "original": "Browser",
       "translated": "브라우저",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Embed codebase for improved contextual understanding and knowledge. Embeddings and metadata are stored in the cloud, but all code is stored locally.",
-      "translated": "향상된 컨텍스트 이해와 지식을 위해 코드베이스를 임베딩합니다. 임베딩과 메타데이터는 클라우드에 저장되지만 모든 코드는 로컬에 저장됩니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -2790,11 +2515,6 @@
     {
       "original": "Add Files to New Chat",
       "translated": "새 채팅에 파일 추가",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Add Terminal",
-      "translated": "터미널 추가",
       "match_type": "exact_quoted"
     },
     {
@@ -3113,11 +2833,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Configure Dashboard MCP Servers",
-      "translated": "대시보드 MCP 서버 구성",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Configure Editors",
       "translated": "편집기 구성",
       "match_type": "exact_quoted"
@@ -3195,11 +2910,6 @@
     {
       "original": "Create Custom Rule",
       "translated": "사용자 지정 규칙 만들기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Create Manual Snapshot",
-      "translated": "수동 스냅샷 만들기",
       "match_type": "exact_quoted"
     },
     {
@@ -3323,18 +3033,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Error changing snapshot visibility:",
-      "translated": "스냅샷 공개 범위 변경 오류:",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Error checking PR mergeability:",
       "translated": "PR 병합 가능 여부 확인 오류:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Error checking environment.json status:",
-      "translated": "environment.json 상태 확인 오류:",
       "match_type": "exact_quoted"
     },
     {
@@ -3363,18 +3063,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Error checking sharing status:",
-      "translated": "공유 상태 확인 오류:",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Error computing approximate diff line:",
       "translated": "대략적인 diff 행 계산 오류:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Error creating environment.json file:",
-      "translated": "environment.json 파일 생성 오류:",
       "match_type": "exact_quoted"
     },
     {
@@ -3418,11 +3108,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Error moving config to database:",
-      "translated": "구성을 데이터베이스로 이동 오류:",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Error playing preview sound:",
       "translated": "미리듣기 소리 재생 오류:",
       "match_type": "exact_quoted"
@@ -3458,16 +3143,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Failed to change snapshot visibility",
-      "translated": "스냅샷 공개 범위 변경에 실패했습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Failed to check GitHub access",
-      "translated": "GitHub 액세스 확인에 실패했습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Failed to copy link to clipboard",
       "translated": "클립보드에 링크 복사에 실패했습니다",
       "match_type": "exact_quoted"
@@ -3488,11 +3163,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Failed to create environment.json file",
-      "translated": "environment.json 파일 생성에 실패했습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Failed to create or find a composer to resolve merge conflicts",
       "translated": "병합 충돌을 해결할 Composer 생성 또는 찾기에 실패했습니다",
       "match_type": "exact_quoted"
@@ -3505,11 +3175,6 @@
     {
       "original": "Failed to fetch entitlements",
       "translated": "권한 정보 가져오기에 실패했습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Failed to fetch snapshot visibility:",
-      "translated": "스냅샷 공개 범위 가져오기에 실패했습니다:",
       "match_type": "exact_quoted"
     },
     {
@@ -3560,16 +3225,6 @@
     {
       "original": "Failed to load current file content:",
       "translated": "현재 파일 내용 로드에 실패했습니다:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Failed to modify environment.json:",
-      "translated": "environment.json 수정에 실패했습니다:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Failed to move configuration to private storage",
-      "translated": "구성을 개인 저장소로 이동하는 데 실패했습니다",
       "match_type": "exact_quoted"
     },
     {
@@ -3788,11 +3443,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "No GitHub repos found",
-      "translated": "GitHub 저장소를 찾을 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "No SidebarContext found",
       "translated": "SidebarContext를 찾을 수 없습니다",
       "match_type": "exact_quoted"
@@ -3830,11 +3480,6 @@
     {
       "original": "No background composer ID found.",
       "translated": "백그라운드 Composer ID를 찾을 수 없습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No changes made",
-      "translated": "변경 사항 없음",
       "match_type": "exact_quoted"
     },
     {
@@ -3878,16 +3523,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "No environment configuration to save",
-      "translated": "저장할 환경 구성이 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No environment.json found",
-      "translated": "environment.json을 찾을 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "No extension gallery query service configured.",
       "translated": "확장 갤러리 쿼리 서비스가 구성되지 않았습니다.",
       "match_type": "exact_quoted"
@@ -3925,16 +3560,6 @@
     {
       "original": "No parent window found",
       "translated": "상위 창을 찾을 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No preferred remote found. Please add a preferred remote to your repository.",
-      "translated": "기본 리모트를 찾을 수 없습니다. 저장소에 기본 리모트를 추가하십시오.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No preferred remote found. Please add a remote to your repository.",
-      "translated": "기본 리모트를 찾을 수 없습니다. 저장소에 리모트를 추가하십시오.",
       "match_type": "exact_quoted"
     },
     {
@@ -4023,11 +3648,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Open Billing Dashboard",
-      "translated": "결제 대시보드 열기",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Open Browser",
       "translated": "브라우저 열기",
       "match_type": "exact_quoted"
@@ -4045,11 +3665,6 @@
     {
       "original": "Open DevTools",
       "translated": "DevTools 열기",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Open Dockerfile",
-      "translated": "Dockerfile 열기",
       "match_type": "exact_quoted"
     },
     {
@@ -4228,18 +3843,8 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Reset to Default Ubuntu",
-      "translated": "기본 Ubuntu로 초기화",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Reset to default sound",
       "translated": "기본 소리로 초기화",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Save to .cursor/environment.json",
-      "translated": ".cursor/environment.json에 저장",
       "match_type": "exact_quoted"
     },
     {
@@ -4713,11 +4318,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "tools from enabled servers. Too many tools can degrade performance, and some models may not respect more than",
-      "translated": "개의 도구가 활성화된 서버에 있습니다. 도구가 너무 많으면 성능이 저하될 수 있으며, 일부 모델은 다음 개수를 초과하는 도구를 인식하지 못할 수 있습니다:",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "&lt;project-root&gt;/.cursor/mcp.json",
       "translated": "&lt;project-root&gt;/.cursor/mcp.json",
       "match_type": "exact_quoted"
@@ -4728,78 +4328,13 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "+$ free usage on us",
-      "translated": "+$ 무료 사용량 제공",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Access Denied:  (Request ID: )",
-      "translated": "접근 거부:  (요청 ID: )",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Access Granted (Request ID: )",
-      "translated": "접근 허용 (요청 ID: )",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Add for MyselfAdd to Project",
-      "translated": "나만 추가프로젝트에 추가",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Chat could not be loadedThe chat data may have been deleted or is unavailable",
-      "translated": "채팅을 불러올 수 없습니다채팅 데이터가 삭제되었거나 사용할 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Configured Hooks ()",
-      "translated": "구성된 Hooks ()",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Created by",
       "translated": "제작자:",
       "match_type": "exact_quoted"
     },
     {
-      "original": "Data Sharing is paused for your first day of usage. Sharing will activate in  hour.",
-      "translated": "사용 첫날에는 데이터 공유가 일시 중지됩니다. 데이터 공유가  시간 후 활성화됩니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Enable  API KeyAre you sure you want to enable your own  API key? Several of Cursor's features require custom models (Tab, Apply from Chat, Agent), which cannot be billed to an API key.",
-      "translated": " API 키 활성화정말로 자체  API 키를 활성화하시겠습니까? Cursor의 여러 기능은 커스텀 모델(Tab, Apply from Chat, Agent)을 필요로 하며, 이는 API 키로 청구할 수 없습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Exceeding total tools limitYou have  tools from enabled servers. Too many tools can degrade performance, and some models may not respect more than  tools.You can disable individual tools to reduce this number by expanding the server and clicking tools you don't need.",
-      "translated": "총 도구 수 제한 초과활성화된 서버에  개의 도구가 있습니다. 도구가 너무 많으면 성능이 저하될 수 있으며, 일부 모델은  개를 초과하는 도구를 인식하지 못할 수 있습니다.서버를 펼치고 필요 없는 도구를 클릭하여 개별 도구를 비활성화할 수 있습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "File edited",
-      "translated": "파일이 수정되었습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Headers:",
       "translated": "헤더:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Incorrect format, fix with agent",
-      "translated": "잘못된 형식, 에이전트로 수정",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Input:Output:",
-      "translated": "입력:출력:",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Invalid hooks.json foundWe detected a hooks.json file that could not be loaded. Fix the errors below to enable hooks.",
-      "translated": "유효하지 않은 hooks.json 발견hooks.json 파일을 불러올 수 없습니다. 아래 오류를 수정하여 hooks를 활성화하십시오.",
       "match_type": "exact_quoted"
     },
     {
@@ -4823,88 +4358,13 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Marketplace /",
-      "translated": "마켓플레이스 /",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "New MCP ServerAdd a Custom MCP Server",
-      "translated": "새 MCP 서버커스텀 MCP 서버 추가",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "No ResultTry a different search term or browse by category",
-      "translated": "결과 없음다른 검색어를 시도하거나 카테고리별로 탐색하십시오",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Not automatically computing index because number of files is .",
-      "translated": "파일 수가 개이므로 인덱스를 자동으로 계산하지 않습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Open a folder to use Cloud AgentCloud agents require a workspace folder to be opened to configure environment settings and run properly.",
-      "translated": "Cloud Agent를 사용하려면 폴더를 여십시오Cloud Agent는 환경 설정을 구성하고 올바르게 실행하기 위해 워크스페이스 폴더가 열려 있어야 합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Privacy Mode (Legacy)No training and no storage. Background Agent and other features that require code storage will be disabled.",
-      "translated": "개인정보 보호 모드 (레거시)학습 및 저장이 수행되지 않습니다. Background Agent 및 코드 저장이 필요한 기타 기능이 비활성화됩니다.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Privacy ModeNo training. Code may be stored for Background Agent and other features.",
-      "translated": "개인정보 보호 모드학습이 수행되지 않습니다. Background Agent 및 기타 기능을 위해 코드가 저장될 수 있습니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Result:",
       "translated": "결과:",
       "match_type": "exact_quoted"
     },
     {
-      "original": "Server with identifier  is missing a name. Please provide a unique name in the configuration.",
-      "translated": "식별자가 인 서버에 이름이 없습니다. 구성에서 고유한 이름을 지정하십시오.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Share DataImprove Cursor for everyone",
-      "translated": "데이터 공유모든 사용자를 위해 Cursor를 개선합니다",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Show all ( more)",
-      "translated": "모두 표시 ( 더 보기)",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Something went wrong. Please contact  if this persists.",
-      "translated": "문제가 발생했습니다. 이 문제가 지속되면 에 문의하십시오.",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Tool : Parameter  contains invalid characters or is too long",
-      "translated": "도구 : 매개변수 에 잘못된 문자가 포함되어 있거나 너무 깁니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Waiting for a safe stopping point before transferring\\u2026",
       "translated": "전환하기 전에 안전한 중지 지점을 기다리는 중\\u2026",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "With your Cursor subscription, you do not need to use your own Anthropic key!",
-      "translated": "현재 Cursor 구독으로 자체 Anthropic 키를 사용할 필요가 없습니다!",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "With your Cursor subscription, you do not need to use your own Google key!",
-      "translated": "현재 Cursor 구독으로 자체 Google 키를 사용할 필요가 없습니다!",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "You can switch to a snapshot-defined environment if you're having trouble setting up the Dockerfile.",
-      "translated": "Dockerfile 설정에 문제가 있는 경우 스냅샷 정의 환경으로 전환할 수 있습니다.",
       "match_type": "exact_quoted"
     },
     {
@@ -5128,11 +4588,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Set high-level direction and delegate manual tasks \\u2014 all while maintaining the full power of the IDE.",
-      "translated": "IDE의 모든 기능을 유지하면서 상위 수준의 방향을 설정하고 수동 작업을 위임합니다.",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Skills help the agent accomplish specific tasks",
       "translated": "스킬은 에이전트가 특정 작업을 수행하는 데 도움을 줍니다",
       "match_type": "exact_quoted"
@@ -5258,11 +4713,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Project name cannot be empty",
-      "translated": "프로젝트 이름은 비워둘 수 없습니다",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Protected .code-workspace file",
       "translated": "보호된 .code-workspace 파일",
       "match_type": "exact_quoted"
@@ -5303,11 +4753,6 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Shared with repository collaborators",
-      "translated": "리포지토리 협업자와 공유됨",
-      "match_type": "exact_quoted"
-    },
-    {
       "original": "Spin up a new thread with this plan as context",
       "translated": "이 계획을 컨텍스트로 새 스레드를 시작합니다",
       "match_type": "exact_quoted"
@@ -5320,11 +4765,6 @@
     {
       "original": "Steer the plan, or add more details",
       "translated": "계획을 조정하거나 세부 사항을 추가하세요",
-      "match_type": "exact_quoted"
-    },
-    {
-      "original": "Taking longer than expected…",
-      "translated": "예상보다 오래 걸리고 있습니다…",
       "match_type": "exact_quoted"
     },
     {
@@ -5613,8 +5053,1393 @@
       "match_type": "exact_quoted"
     },
     {
-      "original": "Auto + Composer",
-      "translated": "Auto + Composer",
+      "original": "Agent Review cancelled",
+      "translated": "에이전트 리뷰 취소됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Allow network access",
+      "translated": "네트워크 접근 허용",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Approve this server",
+      "translated": "이 서버 승인",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Approve this tool",
+      "translated": "이 도구 승인",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Auto-hide editor when empty",
+      "translated": "비어 있을 때 편집기 자동 숨기기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Browser URL not found",
+      "translated": "브라우저 URL을 찾을 수 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Build Locally",
+      "translated": "로컬에서 빌드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Build in Cloud",
+      "translated": "클라우드에서 빌드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Chat history",
+      "translated": "채팅 기록",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Code selections",
+      "translated": "코드 선택",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse Auto-Run Commands",
+      "translated": "자동 실행 명령 접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse Composer",
+      "translated": "Composer 접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse auto-run command output by default in Terminal command previews",
+      "translated": "터미널 명령 미리보기에서 기본적으로 자동 실행 명령 출력을 접습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Command Denylist",
+      "translated": "명령어 거부 목록",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Commands that should always require user approval, even if they match allowlist patterns",
+      "translated": "허용 목록 패턴과 일치하더라도 항상 사용자 승인이 필요한 명령",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Commit on Main",
+      "translated": "메인에 커밋",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Commit on Main Branch",
+      "translated": "메인 브랜치에 커밋",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Connect GitHub/GitLab",
+      "translated": "GitHub/GitLab 연결",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Connect GitHub/GitLab, manage team and user settings, and configure environments",
+      "translated": "GitHub/GitLab 연결, 팀 및 사용자 설정 관리, 환경 구성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Continue and revert",
+      "translated": "계속 및 되돌리기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Continue without backup",
+      "translated": "백업 없이 계속",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Continue without reverting",
+      "translated": "되돌리지 않고 계속",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Conversation Corrupted",
+      "translated": "대화 손상됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create New Branch",
+      "translated": "새 브랜치 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create a cursor rule from the highlighted text",
+      "translated": "강조 표시된 텍스트에서 Cursor 규칙 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Created by Cursor",
+      "translated": "Cursor에서 생성됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Define a new skill for the agent to use",
+      "translated": "에이전트가 사용할 새 스킬 정의",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Diff with Main Branch",
+      "translated": "메인 브랜치와 비교",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Disable Inline Diffs",
+      "translated": "인라인 diff 비활성화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Do not use browser",
+      "translated": "브라우저 사용 안 함",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Download request content",
+      "translated": "요청 내용 다운로드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Enable auto-keep",
+      "translated": "자동 유지 활성화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Enable auto-keep to have changes be updated automatically. You can also do this later in Cursor Settings.",
+      "translated": "변경 사항이 자동으로 업데이트되도록 자동 유지를 활성화합니다. Cursor 설정에서 나중에 설정할 수도 있습니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Failed to attach PDF file. Please try again.",
+      "translated": "PDF 파일 첨부에 실패했습니다. 다시 시도해주세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Failed to download request content",
+      "translated": "요청 내용 다운로드 실패",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Failed to send limit increase request",
+      "translated": "한도 증가 요청 전송 실패",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "File is ignored via .cursorignore",
+      "translated": ".cursorignore를 통해 파일이 무시됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "File too large",
+      "translated": "파일이 너무 큽니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "File too large - over 1M chars",
+      "translated": "파일이 너무 큽니다 - 100만자 초과",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Find with Agent",
+      "translated": "에이전트로 찾기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Fix with Agent",
+      "translated": "에이전트로 수정",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Fork Chat",
+      "translated": "채팅 분기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Fork this chat",
+      "translated": "이 채팅 분기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "From plugins installed in Cursor",
+      "translated": "Cursor에 설치된 플러그인에서",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Generating response",
+      "translated": "응답 생성 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "In Progress",
+      "translated": "진행 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Keep all pending changes",
+      "translated": "보류 중인 모든 변경 사항 유지",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Learn More",
+      "translated": "자세히 알아보기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading branches...",
+      "translated": "브랜치 로드 중...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Manage Billing",
+      "translated": "결제 관리",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Mark as Read",
+      "translated": "읽음으로 표시",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Mark as Unread",
+      "translated": "읽지 않음으로 표시",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Mark chat as read",
+      "translated": "채팅을 읽음으로 표시",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Mark chat as unread",
+      "translated": "채팅을 읽지 않음으로 표시",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Model Status",
+      "translated": "모델 상태",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "More actions",
+      "translated": "추가 작업",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Nearby definitions",
+      "translated": "주변 정의",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "New worktree",
+      "translated": "새 워크트리",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No Team MCP Servers",
+      "translated": "팀 MCP 서버 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No available options",
+      "translated": "사용 가능한 옵션 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No branch or commit hash found",
+      "translated": "브랜치 또는 커밋 해시를 찾을 수 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No branches",
+      "translated": "브랜치 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No request content available",
+      "translated": "요청 내용 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Agent Review results",
+      "translated": "에이전트 리뷰 결과 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Composer Settings",
+      "translated": "Composer 설정 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Existing",
+      "translated": "기존 항목 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Rule",
+      "translated": "규칙 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open as Pane",
+      "translated": "패널로 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open chat in a new tab",
+      "translated": "새 탭에서 채팅 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open in New Tab",
+      "translated": "새 탭에서 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open the generated rule file",
+      "translated": "생성된 규칙 파일 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Preparing request",
+      "translated": "요청 준비 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Processing tool calls",
+      "translated": "도구 호출 처리 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reconnecting",
+      "translated": "재연결 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reload Window",
+      "translated": "창 다시 로드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Remove local plugin",
+      "translated": "로컬 플러그인 제거",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Rename chat",
+      "translated": "채팅 이름 변경",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Rename cloud agent",
+      "translated": "클라우드 에이전트 이름 변경",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Request ID copied to clipboard",
+      "translated": "요청 ID가 클립보드에 복사됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Request content downloaded",
+      "translated": "요청 내용 다운로드됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reset Composer Position",
+      "translated": "Composer 위치 초기화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reset Position",
+      "translated": "위치 초기화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reset to default",
+      "translated": "기본값으로 초기화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Restore chat",
+      "translated": "채팅 복원",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Resubmit for all agents",
+      "translated": "모든 에이전트에 재제출",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Search Agents...",
+      "translated": "에이전트 검색...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Smart Allowlist",
+      "translated": "스마트 허용 목록",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Start New Chat",
+      "translated": "새 채팅 시작",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Start New Chat?",
+      "translated": "새 채팅을 시작하시겠습니까?",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Start writing your plan...",
+      "translated": "계획을 작성하세요...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Starting up environment",
+      "translated": "환경 시작 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Streaming text",
+      "translated": "텍스트 스트리밍 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Submit from a previous message?",
+      "translated": "이전 메시지에서 제출하시겠습니까?",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Submitting from a previous message will revert file changes to before this message and clear the messages after this one.",
+      "translated": "이전 메시지에서 제출하면 이 메시지 이전의 파일 변경 사항으로 되돌리고 이후 메시지가 삭제됩니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Summarizing",
+      "translated": "요약 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Switching models is not supported in this conversation. Would you like to start a new chat?",
+      "translated": "이 대화에서는 모델 전환이 지원되지 않습니다. 새 채팅을 시작하시겠습니까?",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Team MCP Servers",
+      "translated": "팀 MCP 서버",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Thinking",
+      "translated": "생각 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "This conversation has corrupted data. You can view and export it, but new messages cannot be sent. Please start a new conversation to continue.",
+      "translated": "이 대화에 손상된 데이터가 있습니다. 보기 및 내보내기는 가능하지만 새 메시지를 보낼 수 없습니다. 계속하려면 새 대화를 시작해주세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Thumbs Down",
+      "translated": "싫어요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Thumbs Up",
+      "translated": "좋아요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Tool executing",
+      "translated": "도구 실행 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Tool streaming",
+      "translated": "도구 스트리밍 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo all pending changes",
+      "translated": "보류 중인 모든 변경 사항 실행 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Use AI-powered command classification to intelligently match commands against allowlist patterns and suggest sandbox modes",
+      "translated": "AI 기반 명령 분류를 사용하여 허용 목록 패턴과 지능적으로 매칭하고 샌드박스 모드를 제안합니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Use Cursor Browser",
+      "translated": "Cursor 브라우저 사용",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Use External Browser",
+      "translated": "외부 브라우저 사용",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Use commit hash",
+      "translated": "커밋 해시 사용",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "View Plan",
+      "translated": "계획 보기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Waiting for first token",
+      "translated": "첫 번째 토큰 대기 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Waiting for heartbeat",
+      "translated": "하트비트 대기 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "When all editors are closed, hide the editor area and maximize chat",
+      "translated": "모든 편집기가 닫히면 편집기 영역을 숨기고 채팅을 최대화합니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Your branches",
+      "translated": "내 브랜치",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "commit changes",
+      "translated": "변경 사항 커밋",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Accept & Run Generated Command",
+      "translated": "생성된 명령 수락 및 실행",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Accept Generated Command",
+      "translated": "생성된 명령 수락",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Accept all cells",
+      "translated": "모든 셀 수락",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add Symbol to Current Chat",
+      "translated": "현재 채팅에 심볼 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add Symbol to New Chat",
+      "translated": "새 채팅에 심볼 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add new doc",
+      "translated": "새 문서 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add new rule",
+      "translated": "새 규칙 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add new terminal",
+      "translated": "새 터미널 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Allow popup when most helpful",
+      "translated": "가장 도움이 될 때 팝업 허용",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Cancel Generation",
+      "translated": "생성 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Close Agent Changes",
+      "translated": "에이전트 변경 사항 닫기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Close Find Widget",
+      "translated": "찾기 위젯 닫기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Close Hint",
+      "translated": "힌트 닫기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse All",
+      "translated": "모두 접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse command output",
+      "translated": "명령 출력 접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse plan",
+      "translated": "계획 접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Configure Team MCP Servers",
+      "translated": "팀 MCP 서버 구성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Configure Terminal Settings",
+      "translated": "터미널 설정 구성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Connection Error",
+      "translated": "연결 오류",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Connection failed. Please try again, or contact support if the issue persists.",
+      "translated": "연결에 실패했습니다. 다시 시도하거나 문제가 지속되면 지원팀에 문의하세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Copy Last Command",
+      "translated": "마지막 명령 복사",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Copy Last Command Output",
+      "translated": "마지막 명령 출력 복사",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Copy Last Command and Output",
+      "translated": "마지막 명령 및 출력 복사",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Copy Link",
+      "translated": "링크 복사",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Copy Message",
+      "translated": "메시지 복사",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create Command",
+      "translated": "명령어 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create New Terminal",
+      "translated": "새 터미널 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create Rule",
+      "translated": "규칙 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Delete Old Chats...",
+      "translated": "오래된 채팅 삭제...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Delete chats older than how many days?",
+      "translated": "며칠 이전 채팅을 삭제하시겠습니까?",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Disabled in multi-root workspaces",
+      "translated": "다중 루트 워크스페이스에서 비활성화됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Download complete",
+      "translated": "다운로드 완료",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Edit message...",
+      "translated": "메시지 편집...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Expand All",
+      "translated": "모두 펼치기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Expand command and output",
+      "translated": "명령 및 출력 펼치기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Expand plan",
+      "translated": "계획 펼치기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Export Custom Modes",
+      "translated": "사용자 지정 모드 내보내기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Export Notepads to Files",
+      "translated": "메모장을 파일로 내보내기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Failed to add image. The image format is not supported.",
+      "translated": "이미지 추가 실패. 지원되지 않는 이미지 형식입니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Hide Prompt Bar",
+      "translated": "프롬프트 바 숨기기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Install Cursor CLI",
+      "translated": "Cursor CLI 설치",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Install Git to enable committing from Review Changes",
+      "translated": "리뷰 변경 사항에서 커밋하려면 Git을 설치하세요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading Chat",
+      "translated": "채팅 로드 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading changes...",
+      "translated": "변경 사항 로드 중...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading plugins...",
+      "translated": "플러그인 로드 중...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No issues found",
+      "translated": "문제 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No matching agents",
+      "translated": "일치하는 에이전트 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No output",
+      "translated": "출력 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No pending changes to review",
+      "translated": "검토할 보류 중인 변경 사항 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No repository found",
+      "translated": "저장소를 찾을 수 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No summary available",
+      "translated": "요약 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No workspace folder",
+      "translated": "워크스페이스 폴더 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Not authenticated",
+      "translated": "인증되지 않음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Not synced with remote",
+      "translated": "원격과 동기화되지 않음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Agent Changes",
+      "translated": "에이전트 변경 사항 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open Branch Menu",
+      "translated": "브랜치 메뉴 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open PR",
+      "translated": "PR 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open a file to create a cursor rule.",
+      "translated": "Cursor 규칙을 생성하려면 파일을 열어주세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open a workspace folder to store cursor rules.",
+      "translated": "Cursor 규칙을 저장하려면 워크스페이스 폴더를 열어주세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open in Cursor Browser",
+      "translated": "Cursor 브라우저에서 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open in External Browser",
+      "translated": "외부 브라우저에서 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open plan in editor",
+      "translated": "편집기에서 계획 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open worktree",
+      "translated": "워크트리 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Please enter a positive integer",
+      "translated": "양의 정수를 입력해주세요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Processing request",
+      "translated": "요청 처리 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reject Generated Command",
+      "translated": "생성된 명령 거부",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reject all cells",
+      "translated": "모든 셀 거부",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Save to workspace",
+      "translated": "워크스페이스에 저장",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Search Feature Requests",
+      "translated": "기능 요청 검색",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Search agents",
+      "translated": "에이전트 검색",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Select All",
+      "translated": "모두 선택",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Select review scope",
+      "translated": "리뷰 범위 선택",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Select the text you want to turn into a rule.",
+      "translated": "규칙으로 변환할 텍스트를 선택하세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Submit Detailed Feedback",
+      "translated": "상세 피드백 제출",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo all applied changes",
+      "translated": "적용된 모든 변경 사항 실행 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo all applied changes across all files",
+      "translated": "모든 파일에서 적용된 변경 사항 실행 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo all applied changes. This agent will go back to the worktree.",
+      "translated": "적용된 모든 변경 사항을 실행 취소합니다. 에이전트가 워크트리로 돌아갑니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo all pending changes across all files",
+      "translated": "모든 파일에서 보류 중인 변경 사항 실행 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upload Image",
+      "translated": "이미지 업로드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No branches yet",
+      "translated": "아직 브랜치가 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No branches found",
+      "translated": "브랜치를 찾을 수 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add a follow-up",
+      "translated": "후속 질문 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add more optional details",
+      "translated": "추가 선택 세부 정보 입력",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Ask follow-ups in the worktree",
+      "translated": "워크트리에서 후속 질문",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Ask, learn, brainstorm",
+      "translated": "질문하고, 배우고, 브레인스토밍하세요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Continue locally",
+      "translated": "로컬에서 계속",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Describe a project, feature, or long-term goal...",
+      "translated": "프로젝트, 기능 또는 장기 목표를 설명하세요...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Editing queued message...",
+      "translated": "대기 중인 메시지 편집 중...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Enter additional context about the issue",
+      "translated": "문제에 대한 추가 컨텍스트 입력",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Environment ready",
+      "translated": "환경 준비 완료",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Get faster responses",
+      "translated": "더 빠른 응답 받기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Merge is blocked by a pre-receive hook",
+      "translated": "pre-receive 훅에 의해 병합이 차단되었습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Merge status is being calculated...",
+      "translated": "병합 상태를 계산하고 있습니다...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Merging is blocked by branch protection rules",
+      "translated": "브랜치 보호 규칙에 의해 병합이 차단되었습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "No PR data available",
+      "translated": "PR 데이터 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Only the PR author can merge this pull request",
+      "translated": "PR 작성자만 이 풀 리퀘스트를 병합할 수 있습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Plan, @ for context, / for commands",
+      "translated": "계획, @ 컨텍스트, / 명령어",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Plan, search, build anything",
+      "translated": "계획하고, 검색하고, 무엇이든 빌드하세요",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Reject, suggest, follow up?",
+      "translated": "거절, 제안, 후속 질문?",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Required status checks are failing",
+      "translated": "필수 상태 확인이 실패하고 있습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Run outside sandbox:",
+      "translated": "샌드박스 외부에서 실행:",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Run with network:",
+      "translated": "네트워크로 실행:",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Set a new limit",
+      "translated": "새 한도 설정",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Switching models is not supported in this conversation",
+      "translated": "이 대화에서는 모델 전환이 지원되지 않습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "The merge commit cannot be cleanly created",
+      "translated": "병합 커밋을 깔끔하게 생성할 수 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "This branch has conflicts that must be resolved",
+      "translated": "이 브랜치에 해결해야 할 충돌이 있습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "This branch is behind the base branch and needs to be updated",
+      "translated": "이 브랜치가 기본 브랜치보다 뒤처져 있어 업데이트가 필요합니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "This pull request cannot be merged",
+      "translated": "이 풀 리퀘스트를 병합할 수 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "This pull request is a draft",
+      "translated": "이 풀 리퀘스트는 초안입니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Total usage limit reached",
+      "translated": "총 사용 한도에 도달했습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade for 20x usage & faster responses",
+      "translated": "20배 사용량 및 더 빠른 응답을 위해 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade for 3x usage & faster responses",
+      "translated": "3배 사용량 및 더 빠른 응답을 위해 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade for extended usage & faster responses",
+      "translated": "확장된 사용량 및 더 빠른 응답을 위해 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade to Pro",
+      "translated": "Pro로 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade to Ultra",
+      "translated": "Ultra로 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Usage limit reached",
+      "translated": "사용 한도에 도달했습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Waiting for artifact to upload",
+      "translated": "아티팩트 업로드 대기 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Work on explicitly added files (no tools)",
+      "translated": "명시적으로 추가된 파일에서 작업 (도구 없음)",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add to Chat",
+      "translated": "채팅에 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add from GitHub/GitLab",
+      "translated": "GitHub/GitLab에서 추가",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add Symbol to Current Chat...",
+      "translated": "현재 채팅에 심볼 추가...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Add Symbol to New Chat...",
+      "translated": "새 채팅에 심볼 추가...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Closing Shadow Workspace",
+      "translated": "섀도우 워크스페이스 닫는 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Resize All Heights",
+      "translated": "모든 높이 조정",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "View diagram source",
+      "translated": "다이어그램 소스 보기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading sub-agent",
+      "translated": "서브에이전트 로드 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Loading diagram",
+      "translated": "다이어그램 로드 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Not Found",
+      "translated": "찾을 수 없음",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Select to Next Command",
+      "translated": "다음 명령까지 선택",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Select to Previous Command",
+      "translated": "이전 명령까지 선택",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Disable auto-merge",
+      "translated": "자동 병합 비활성화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Enable auto-merge",
+      "translated": "자동 병합 활성화",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Create canvas",
+      "translated": "캔버스 생성",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Open in blame",
+      "translated": "Blame에서 열기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Confirm",
+      "translated": "확인",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Rename",
+      "translated": "이름 변경",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Restore",
+      "translated": "복원",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Resubmit",
+      "translated": "재제출",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Cancelled",
+      "translated": "취소됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Archived",
+      "translated": "보관됨",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Definitions",
+      "translated": "정의",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Collapse",
+      "translated": "접기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Pending",
+      "translated": "대기 중",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Results",
+      "translated": "결과",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Show History",
+      "translated": "기록 보기",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Redo checkpoint",
+      "translated": "체크포인트 다시 실행",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Todo description...",
+      "translated": "할 일 설명...",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "custom request failed",
+      "translated": "사용자 정의 요청 실패",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "merged branch",
+      "translated": "병합된 브랜치",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "cannot start debugging",
+      "translated": "디버깅을 시작할 수 없습니다",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Redo Lexical",
+      "translated": "다시 실행",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Undo Lexical",
+      "translated": "실행 취소",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Invalid file selection (missing URI)",
+      "translated": "잘못된 파일 선택 (URI 누락)",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Pro+",
+      "translated": "Pro+",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Upgrade to Pro+",
+      "translated": "Pro+로 업그레이드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "You've reached your Free plan limit. Upgrade to Pro for expanded agent usage.",
+      "translated": "무료 요금제 한도에 도달했습니다. 확장된 에이전트 사용을 위해 Pro로 업그레이드하세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "You've reached your monthly limit. Set a new on-demand limit to continue.",
+      "translated": "월간 한도에 도달했습니다. 계속하려면 새 온디맨드 한도를 설정하세요.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "You've reached your team's usage limit.",
+      "translated": "팀의 사용 한도에 도달했습니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "You've reached your usage limit.",
+      "translated": "사용 한도에 도달했습니다.",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Files",
+      "translated": "파일",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Code",
+      "translated": "코드",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Settings",
+      "translated": "설정",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "Local",
+      "translated": "로컬",
+      "match_type": "exact_quoted"
+    },
+    {
+      "original": "View",
+      "translated": "보기",
       "match_type": "exact_quoted"
     }
   ]

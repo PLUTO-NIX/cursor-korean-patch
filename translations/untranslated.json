@@ -1,6 +1,6 @@
 {
-  "version": "2.5.26",
-  "total": 74,
+  "version": "2.6.18",
+  "total": 402,
   "strings": [
     {
       "text": "${2:label}",
@@ -45,56 +45,80 @@
       "context": "Getter function returning template literal"
     },
     {
+      "text": "Add ${i.mcpInfo.name}",
+      "key": "getter.add_i_mcpinfo_name",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Add ${i.pluginDisplayName}",
+      "key": "getter.add_i_plugindisplayname",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
       "text": "Apply .cursorignore files to all subdirectories${n.reactiveStorageService.applicationUserPersistentStorage.teamAdminSettings?.cursorIgnore?.hierarchicalEnabled?\" (controlled by admin)\":\"\"}. Changing this setting will require a restart of Cursor.",
       "key": "getter.apply_cursorignore_files_to_all_subdirectories_n",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Command Denylist${a().isAdminControlled?\"\":\" (Deprecated)\"}",
-      "key": "getter.command_denylist_a_isadmincontrolled_depr",
+      "text": "Command Denylist${l().isAdminControlled?\"\":\" (Deprecated)\"}",
+      "key": "getter.command_denylist_l_isadmincontrolled_depr",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Commands that can run automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
-      "key": "getter.commands_that_can_run_automatically_a_isadminco",
+      "text": "Commands that can run automatically${l().isAdminControlled?\" (controlled by admin)\":B()?",
+      "key": "getter.commands_that_can_run_automatically_l_isadminco",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Commands that can't run automatically${a().isAdminControlled?\"\":\" - DEPRECATED\"}${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
-      "key": "getter.commands_that_can_t_run_automatically_a_isadmin",
+      "text": "Commands that can't run automatically${l().isAdminControlled?\"\":\" - DEPRECATED\"}${l().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.commands_that_can_t_run_automatically_l_isadmin",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "MCP tools that can run automatically. Format: 'server:tool', 'server:*' for all tools from a server, '*:tool' for a tool from any server, or *:* for all tools from all servers${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "text": "MCP tools that can run automatically. Format: 'server:tool', 'server:*' for all tools from a server, '*:tool' for a tool from any server, or *:* for all tools from all servers${l().isAdminControlled?\" (controlled by admin)\":I()?",
       "key": "getter.mcp_tools_that_can_run_automatically_format_ser",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Prevent Agent from automatically running Browser tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "text": "Mark Agent commits as 'Made with Cursor'${t()?\" (controlled by admin)\":\"\"}",
+      "key": "getter.mark_agent_commits_as_made_with_cursor_t_c",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Mark pull requests as made with Cursor${t()?\" (controlled by admin)\":\"\"}",
+      "key": "getter.mark_pull_requests_as_made_with_cursor_t_con",
+      "category": "getter_template",
+      "context": "Getter function returning template literal"
+    },
+    {
+      "text": "Prevent Agent from automatically running Browser tools${l().isAdminControlled?\" (controlled by admin)\":\"\"}",
       "key": "getter.prevent_agent_from_automatically_running_browser_t",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Prevent Agent from automatically running MCP tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "text": "Prevent Agent from automatically running MCP tools${l().isAdminControlled?\" (controlled by admin)\":\"\"}",
       "key": "getter.prevent_agent_from_automatically_running_mcp_tools",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Prevent Agent from creating or modifying files outside of the workspace automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "text": "Prevent Agent from creating or modifying files outside of the workspace automatically${l().isAdminControlled?\" (controlled by admin)\":\"\"}",
       "key": "getter.prevent_agent_from_creating_or_modifying_files_out",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
     {
-      "text": "Prevent Agent from deleting files automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
-      "key": "getter.prevent_agent_from_deleting_files_automatically_a",
+      "text": "Prevent Agent from deleting files automatically${l().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "key": "getter.prevent_agent_from_deleting_files_automatically_l",
       "category": "getter_template",
       "context": "Getter function returning template literal"
     },
@@ -111,26 +135,1634 @@
       "context": "Getter function returning template literal"
     },
     {
-      "text": "(Request ID:",
-      "key": "template.request_id",
+      "text": "Add Unnecessary Bendpoints",
+      "key": "inline.add_unnecessary_bendpoints",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Add not supported on this collection",
+      "key": "inline.add_not_supported_on_this_collection",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Add not supported on this list",
+      "key": "inline.add_not_supported_on_this_list",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Add support for delim type '",
+      "key": "inline.add_support_for_delim_type",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Added attribute",
+      "key": "inline.added_attribute",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Added new entity :",
+      "key": "inline.added_new_entity",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Added new relationship :",
+      "key": "inline.added_new_relationship",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Added new requirement:",
+      "key": "inline.added_new_requirement",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Added to-do",
+      "key": "inline.added_to_do",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Adding node",
+      "key": "inline.adding_node",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Adding nodes children",
+      "key": "inline.adding_nodes_children",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Adding relation:",
+      "key": "inline.adding_relation",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Adding state",
+      "key": "inline.adding_state",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Additional Port Space",
+      "key": "inline.additional_port_space",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Additional Wrapped Edges Spacing",
+      "key": "inline.additional_wrapped_edges_spacing",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Allow Non-Flow Ports To Switch Sides",
+      "key": "inline.allow_non_flow_ports_to_switch_sides",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Allows the user to specify her own cuts for a certain graph.",
+      "key": "inline.allows_the_user_to_specify_her_own_cuts_for_a_cert",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Apply Layout Storage Data",
+      "key": "inline.apply_layout_storage_data",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Apply agent diff attempted",
+      "key": "inline.apply_agent_diff_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Applying agent diff",
+      "key": "inline.applying_agent_diff",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Block Elements",
+      "key": "inline.block_elements",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Blocks:",
+      "key": "inline.blocks",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cancelled to-do",
+      "key": "inline.cancelled_to_do",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot add elements to a Range",
+      "key": "inline.cannot_add_elements_to_a_range",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot call a class as a function",
+      "key": "inline.cannot_call_a_class_as_a_function",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot change both RGB and HSL channels at the same time",
+      "key": "inline.cannot_change_both_rgb_and_hsl_channels_at_the_sam",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot close `",
+      "key": "inline.cannot_close",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot close document, a token (`",
+      "key": "inline.cannot_close_document_a_token",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot construct an ELK without both 'workerUrl' and 'workerFactory'.",
+      "key": "inline.cannot_construct_an_elk_without_both_workerurl_a",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot create PR: No active composer found",
+      "key": "inline.cannot_create_pr_no_active_composer_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot dismiss bug without id",
+      "key": "inline.cannot_dismiss_bug_without_id",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot exceed output matcher length of 40",
+      "key": "inline.cannot_exceed_output_matcher_length_of_40",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot find module '",
+      "key": "inline.cannot_find_module",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot move group into its own",
+      "key": "inline.cannot_move_group_into_its_own",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot offset an unassigned cut.",
+      "key": "inline.cannot_offset_an_unassigned_cut",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot re-open a dirty text document with different encoding. Save it first.",
+      "key": "inline.cannot_re_open_a_dirty_text_document_with_differen",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot read so many bytes!",
+      "key": "inline.cannot_read_so_many_bytes",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot refresh property when process is not set",
+      "key": "inline.cannot_refresh_property_when_process_is_not_set",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot remove diffs when the model is not up to date",
+      "key": "inline.cannot_remove_diffs_when_the_model_is_not_up_to_da",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot remove elements from a Range",
+      "key": "inline.cannot_remove_elements_from_a_range",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot restore commands before addon is activated",
+      "key": "inline.cannot_restore_commands_before_addon_is_activated",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot set a named edge when isMultigraph = false",
+      "key": "inline.cannot_set_a_named_edge_when_ismultigraph_false",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot set elements in a Range",
+      "key": "inline.cannot_set_elements_in_a_range",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot set parent in a non-compound graph",
+      "key": "inline.cannot_set_parent_in_a_non_compound_graph",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot set state while updating",
+      "key": "inline.cannot_set_state_while_updating",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot split without an active instance",
+      "key": "inline.cannot_split_without_an_active_instance",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Cannot suppress a null exception.",
+      "key": "inline.cannot_suppress_a_null_exception",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Checking key",
+      "key": "inline.checking_key",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connect error in stream AI connect",
+      "key": "inline.connect_error_in_stream_ai_connect",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connect error in unary AI connect",
+      "key": "inline.connect_error_in_unary_ai_connect",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connect transport provider not initialized. BIG PROBLEM.",
+      "key": "inline.connect_transport_provider_not_initialized_big_pr",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connected Components Compaction",
+      "key": "inline.connected_components_compaction",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connected Components Compaction Strategy",
+      "key": "inline.connected_components_compaction_strategy",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connected Components Layout Algorithm",
+      "key": "inline.connected_components_layout_algorithm",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Connection: Upgrade",
+      "key": "inline.connection_upgrade",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Copy as SVG",
+      "key": "inline.copy_as_svg",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Copying (nodes) clusterId",
+      "key": "inline.copying_nodes_clusterid",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Copying Edges",
+      "key": "inline.copying_edges",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Copying as",
+      "key": "inline.copying_as",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Copying children of",
+      "key": "inline.copying_children_of",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create New Terminal (In Active Workspace)",
+      "key": "inline.create_new_terminal_in_active_workspace",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create New Terminal (With Profile)",
+      "key": "inline.create_new_terminal_with_profile",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create New Terminal Starting in a Custom Working Directory",
+      "key": "inline.create_new_terminal_starting_in_a_custom_working_d",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create New Terminal in Editor Area",
+      "key": "inline.create_new_terminal_in_editor_area",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create New Terminal in Editor Area to the Side",
+      "key": "inline.create_new_terminal_in_editor_area_to_the_side",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create diagram attempted",
+      "key": "inline.create_diagram_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create plan attempted",
+      "key": "inline.create_plan_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create the logger before flushing",
+      "key": "inline.create_the_logger_before_flushing",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Create the logger before logging",
+      "key": "inline.create_the_logger_before_logging",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Created canvas",
+      "key": "inline.created_canvas",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Created diagram",
+      "key": "inline.created_diagram",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Created plan",
+      "key": "inline.created_plan",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Created worker does not provide the required 'postMessage' function.",
+      "key": "inline.created_worker_does_not_provide_the_required_post",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Delete attempted",
+      "key": "inline.delete_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Edit attempted",
+      "key": "inline.edit_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Edit must be conflict free.",
+      "key": "inline.edit_must_be_conflict_free",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error applying shared name to Best-of-N composers",
+      "key": "inline.error_applying_shared_name_to_best_of_n_composers",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error converting keybinding:",
+      "key": "inline.error_converting_keybinding",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error creating branch:",
+      "key": "inline.error_creating_branch",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error executing queue",
+      "key": "inline.error_executing_queue",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error generating AI name for Best-of-N",
+      "key": "inline.error_generating_ai_name_for_best_of_n",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error generating terminal name:",
+      "key": "inline.error_generating_terminal_name",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error in $callShadowServer",
+      "key": "inline.error_in_callshadowserver",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error in create command action:",
+      "key": "inline.error_in_create_command_action",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error in keybinding recording:",
+      "key": "inline.error_in_keybinding_recording",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error in the connect call.",
+      "key": "inline.error_in_the_connect_call",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error loading image",
+      "key": "inline.error_loading_image",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error parsing",
+      "key": "inline.error_parsing",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error parsing browser changes data:",
+      "key": "inline.error_parsing_browser_changes_data",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error parsing element data:",
+      "key": "inline.error_parsing_element_data",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error parsing key-value for \\\\htmlData",
+      "key": "inline.error_parsing_key_value_for_htmldata",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error pushing stream chunk",
+      "key": "inline.error_pushing_stream_chunk",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error saving keybinding:",
+      "key": "inline.error_saving_keybinding",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error storing PDF:",
+      "key": "inline.error_storing_pdf",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error switching branch:",
+      "key": "inline.error_switching_branch",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error switching to git branch:",
+      "key": "inline.error_switching_to_git_branch",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error validating commit hash:",
+      "key": "inline.error_validating_commit_hash",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error validating conversion model override:",
+      "key": "inline.error_validating_conversion_model_override",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Error while syncing prompt input model",
+      "key": "inline.error_while_syncing_prompt_input_model",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Expand Nodes",
+      "key": "inline.expand_nodes",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to clear debug log file:",
+      "key": "inline.failed_to_clear_debug_log_file",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to close shadow workspace",
+      "key": "inline.failed_to_close_shadow_workspace",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to connect GitHub:",
+      "key": "inline.failed_to_connect_github",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to copy image:",
+      "key": "inline.failed_to_copy_image",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to copy text:",
+      "key": "inline.failed_to_copy_text",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to create blob",
+      "key": "inline.failed_to_create_blob",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to create command file:",
+      "key": "inline.failed_to_create_command_file",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to create command.",
+      "key": "inline.failed_to_create_command",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to create image blob",
+      "key": "inline.failed_to_create_image_blob",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to create socket path! Cache home directory is too long.",
+      "key": "inline.failed_to_create_socket_path_cache_home_directory",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to disable auto-merge",
+      "key": "inline.failed_to_disable_auto_merge",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to dismiss bug:",
+      "key": "inline.failed_to_dismiss_bug",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to enable auto-merge",
+      "key": "inline.failed_to_enable_auto_merge",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to enable network access:",
+      "key": "inline.failed_to_enable_network_access",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to evaluate mark-as-unread/mark-as-read visibility",
+      "key": "inline.failed_to_evaluate_mark_as_unread_mark_as_read_vis",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to fetch plugins:",
+      "key": "inline.failed_to_fetch_plugins",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to get canvas context",
+      "key": "inline.failed_to_get_canvas_context",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to get client",
+      "key": "inline.failed_to_get_client",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to get client after 2 attempts",
+      "key": "inline.failed_to_get_client_after_2_attempts",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to get visualized node",
+      "key": "inline.failed_to_get_visualized_node",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to install MCP server:",
+      "key": "inline.failed_to_install_mcp_server",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to load branches after all retry attempts",
+      "key": "inline.failed_to_load_branches_after_all_retry_attempts",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to load image for resizing",
+      "key": "inline.failed_to_load_image_for_resizing",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to load plugins",
+      "key": "inline.failed_to_load_plugins",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to load video",
+      "key": "inline.failed_to_load_video",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to mark composer as read",
+      "key": "inline.failed_to_mark_composer_as_read",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to mark composer as unread",
+      "key": "inline.failed_to_mark_composer_as_unread",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to mark pull request as ready",
+      "key": "inline.failed_to_mark_pull_request_as_ready",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to merge pull request",
+      "key": "inline.failed_to_merge_pull_request",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to open log file:",
+      "key": "inline.failed_to_open_log_file",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to open plan editor:",
+      "key": "inline.failed_to_open_plan_editor",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to parse environment from shell integration sequence",
+      "key": "inline.failed_to_parse_environment_from_shell_integration",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to parse plugin repository:",
+      "key": "inline.failed_to_parse_plugin_repository",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to parse repository",
+      "key": "inline.failed_to_parse_repository",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to parse structured text; defaulting to non-structured text",
+      "key": "inline.failed_to_parse_structured_text_defaulting_to_non",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to process inline plugin installation:",
+      "key": "inline.failed_to_process_inline_plugin_installation",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to record thumbs down:",
+      "key": "inline.failed_to_record_thumbs_down",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to record thumbs up:",
+      "key": "inline.failed_to_record_thumbs_up",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to rehydrate ErrorDetails from serialized connect detail",
+      "key": "inline.failed_to_rehydrate_errordetails_from_serialized_c",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to remove keybinding:",
+      "key": "inline.failed_to_remove_keybinding",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to request limit increase:",
+      "key": "inline.failed_to_request_limit_increase",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to resolve UUID chat link:",
+      "key": "inline.failed_to_resolve_uuid_chat_link",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to reveal export directory:",
+      "key": "inline.failed_to_reveal_export_directory",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to reveal file in explorer:",
+      "key": "inline.failed_to_reveal_file_in_explorer",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to run review",
+      "key": "inline.failed_to_run_review",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to save keybinding:",
+      "key": "inline.failed_to_save_keybinding",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to stage file:",
+      "key": "inline.failed_to_stage_file",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to track billing banner shown event (failed_payment):",
+      "key": "inline.failed_to_track_billing_banner_shown_event_failed",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to track billing banner shown event (pending_cancellation):",
+      "key": "inline.failed_to_track_billing_banner_shown_event_pendin",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to trigger GitHub connection prompt:",
+      "key": "inline.failed_to_trigger_github_connection_prompt",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Failed to update model, rebuilding",
+      "key": "inline.failed_to_update_model_rebuilding",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Loading registered diagrams",
+      "key": "inline.loading_registered_diagrams",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No AI attribution data found.",
+      "key": "inline.no_ai_attribution_data_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No Layout",
+      "key": "inline.no_layout",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No Model Order",
+      "key": "inline.no_model_order",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No Node",
+      "key": "inline.no_node",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No Plot to render, please provide a plot with some data",
+      "key": "inline.no_plot_to_render_please_provide_a_plot_with_some",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No active composer",
+      "key": "inline.no_active_composer",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No bcId provided",
+      "key": "inline.no_bcid_provided",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No client provider found.",
+      "key": "inline.no_client_provider_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No contents found",
+      "key": "inline.no_contents_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No crossing minimization",
+      "key": "inline.no_crossing_minimization",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No data transfer found",
+      "key": "inline.no_data_transfer_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No diffs found",
+      "key": "inline.no_diffs_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No editors found for resource, cannot back up",
+      "key": "inline.no_editors_found_for_resource_cannot_back_up",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No embedding vector providers registered",
+      "key": "inline.no_embedding_vector_providers_registered",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No function handler for",
+      "key": "inline.no_function_handler_for",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation available for",
+      "key": "inline.no_implementation_available_for",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the crossing minimizer",
+      "key": "inline.no_implementation_is_available_for_the_crossing_mi",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the cycle breaker",
+      "key": "inline.no_implementation_is_available_for_the_cycle_break",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the layerer",
+      "key": "inline.no_implementation_is_available_for_the_layerer",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the layout option",
+      "key": "inline.no_implementation_is_available_for_the_layout_opti",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the layout phase",
+      "key": "inline.no_implementation_is_available_for_the_layout_phas",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the layout processor",
+      "key": "inline.no_implementation_is_available_for_the_layout_proc",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No implementation is available for the node placer",
+      "key": "inline.no_implementation_is_available_for_the_node_placer",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No local context available",
+      "key": "inline.no_local_context_available",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No matching file found in data transfer",
+      "key": "inline.no_matching_file_found_in_data_transfer",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No nodes found for",
+      "key": "inline.no_nodes_found_for",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No running background subagent found for given id",
+      "key": "inline.no_running_background_subagent_found_for_given_id",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No selection precursor initial range",
+      "key": "inline.no_selection_precursor_initial_range",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No serializer found for notebook model, checking if provider still needs to be resolved",
+      "key": "inline.no_serializer_found_for_notebook_model_checking_i",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No shadow workspace manager available",
+      "key": "inline.no_shadow_workspace_manager_available",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No such CodeEditor",
+      "key": "inline.no_such_codeeditor",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No such TextEditor",
+      "key": "inline.no_such_texteditor",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No such environment:",
+      "key": "inline.no_such_environment",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No such layout `",
+      "key": "inline.no_such_layout",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No valid properties",
+      "key": "inline.no_valid_properties",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No view is registered with id:",
+      "key": "inline.no_view_is_registered_with_id",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No workspace folder available for project rules",
+      "key": "inline.no_workspace_folder_available_for_project_rules",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "No workspace folder found",
+      "key": "inline.no_workspace_folder_found",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not Setting parent for node=",
+      "key": "inline.not_setting_parent_for_node",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not Specified",
+      "key": "inline.not_specified",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not a blob-url:",
+      "key": "inline.not_a_blob_url",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not a cluster",
+      "key": "inline.not_a_cluster",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not a valid argument number",
+      "key": "inline.not_a_valid_argument_number",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not an inter-graph edge!",
+      "key": "inline.not_an_inter_graph_edge",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not fully fixed",
+      "key": "inline.not_fully_fixed",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not in owner graph manager's edge list!",
+      "key": "inline.not_in_owner_graph_manager_s_edge_list",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not in owner's edge list!",
+      "key": "inline.not_in_owner_s_edge_list",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not possible to find intersection inside of the rectangle",
+      "key": "inline.not_possible_to_find_intersection_inside_of_the_re",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not supported by LGraph",
+      "key": "inline.not_supported_by_lgraph",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Not supported.",
+      "key": "inline.not_supported",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Open Sans",
+      "key": "inline.open_sans",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Remove Large Storage Database Entries...",
+      "key": "inline.remove_large_storage_database_entries",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Remove not supported on this list",
+      "key": "inline.remove_not_supported_on_this_list",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Remove overlaps",
+      "key": "inline.remove_overlaps",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Reset choice for 'File operation needs preview'",
+      "key": "inline.reset_choice_for_file_operation_needs_preview",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search Order",
+      "key": "inline.search_order",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search attempted",
+      "key": "inline.search_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search files attempted",
+      "key": "inline.search_files_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search folder by name",
+      "key": "inline.search_folder_by_name",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search symbols attempted",
+      "key": "inline.search_symbols_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Search web attempted",
+      "key": "inline.search_web_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searched files",
+      "key": "inline.searched_files",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searched for:",
+      "key": "inline.searched_for",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searched symbols",
+      "key": "inline.searched_symbols",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searched web",
+      "key": "inline.searched_web",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searching children of id",
+      "key": "inline.searching_children_of_id",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searching files",
+      "key": "inline.searching_files",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searching for:",
+      "key": "inline.searching_for",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searching symbols",
+      "key": "inline.searching_symbols",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Searching web",
+      "key": "inline.searching_web",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Select Default Profile",
+      "key": "inline.select_default_profile",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Select a specific layout algorithm.",
+      "key": "inline.select_a_specific_layout_algorithm",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Select to Next Line",
+      "key": "inline.select_to_next_line",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Select to Previous Line",
+      "key": "inline.select_to_previous_line",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SelectAndInsertFileAction: no file selected",
+      "key": "inline.selectandinsertfileaction_no_file_selected",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SelectAndInsertFileAction: non-text resource selected",
+      "key": "inline.selectandinsertfileaction_non_text_resource_selec",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SelectAndInsertFolderAction: no folder selected",
+      "key": "inline.selectandinsertfolderaction_no_folder_selected",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SelectAndInsertSymAction: no symbol selected",
+      "key": "inline.selectandinsertsymaction_no_symbol_selected",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SelectAndInsertSymAction: non-text resource selected",
+      "key": "inline.selectandinsertsymaction_non_text_resource_select",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Sort By Input Model",
+      "key": "inline.sort_by_input_model",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Sort end labels",
+      "key": "inline.sort_end_labels",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SortByInputModelProcessor/lambda$0$Type",
+      "key": "inline.sortbyinputmodelprocessor_lambda_0_type",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SortByInputModelProcessor/lambda$1$Type",
+      "key": "inline.sortbyinputmodelprocessor_lambda_1_type",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "SortedSet/1",
+      "key": "inline.sortedset_1",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Update canvas",
+      "key": "inline.update_canvas",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Update project attempted",
+      "key": "inline.update_project_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Update status",
+      "key": "inline.update_status",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Update todos attempted",
+      "key": "inline.update_todos_attempted",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Updated canvas",
+      "key": "inline.updated_canvas",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Updated project",
+      "key": "inline.updated_project",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Updated todos",
+      "key": "inline.updated_todos",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Verifying checksum",
+      "key": "inline.verifying_checksum",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "Waiting for output",
+      "key": "inline.waiting_for_output",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "When wrapping graphs, one can specify indices that are not allowed as split points. The validification strategy makes sure every computed split point is allowed.",
+      "key": "inline.when_wrapping_graphs_one_can_specify_indices_that",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "You cannot use debug mode with multiple models.",
+      "key": "inline.you_cannot_use_debug_mode_with_multiple_models",
+      "category": "inline_string",
+      "context": "Inline string literal in settings code"
+    },
+    {
+      "text": "0}function Dsc(h,b,S){if(h",
+      "key": "template.0_function_dsc_h_b_s_if_h",
       "category": "oe_template",
-      "context": "HTML template text: <...>(Request ID:<...>"
+      "context": "HTML template text: <...>0}function Dsc(h,b,S){if(h<...>"
     },
     {
-      "text": "$ / $ included usage",
-      "key": "template_full.included_usage",
+      "text": "1),Bsc(b,h,he,we,-L,U),Bsc(b,h,we,Z,-L,U),U.ue(h[we-1],h[we])",
+      "key": "template.1_bsc_b_h_he_we_l_u_bsc_b_h_we_z_l_u_u_ue_h_w",
+      "category": "oe_template",
+      "context": "HTML template text: <...>1),Bsc(b,h,he,we,-L,U),Bsc(b,h,we,Z,-L,U),U.ue(h[we-1],h[we])<...>"
+    },
+    {
+      "text": "=(L/2|0))for(this.e=T?T.c:null,this.d=L;S++",
+      "key": "template.l_2_0_for_this_e_t_t_c_null_this_d_l_s",
+      "category": "oe_template",
+      "context": "HTML template text: <...>=(L/2|0))for(this.e=T?T.c:null,this.d=L;S++<...>"
+    },
+    {
+      "text": "=9223372036854776e3?(eQe(),Fuc):(L=!1,h",
+      "key": "template.9223372036854776e3_eqe_fuc_l_1_h",
+      "category": "oe_template",
+      "context": "HTML template text: <...>=9223372036854776e3?(eQe(),Fuc):(L=!1,h<...>"
+    },
+    {
+      "text": "=d3e&&(S=iy(h/d3e),h-=S*d3e),b=iy(h),U=kR(b,S,T),L&&yEo(U),U)}function DUv(h,b){var S,T,L,U;for(S=!b||!h.u.Hc(($N(),uY)),U=0,L=new qe(h.e.Cf());L.a",
+      "key": "template.d3e_s_iy_h_d3e_h_s_d3e_b_iy_h_u_kr_b_s_t_l",
+      "category": "oe_template",
+      "context": "HTML template text: <...>=d3e&&(S=iy(h/d3e),h-=S*d3e),b=iy(h),U=kR(b,S,T),L&&yEo(U),U)}function DUv(h,b){var S,T,L,U;for(S=!b||!h.u.Hc(($N(),uY)),U=0,L=new qe(h.e.Cf());L.a<...>"
+    },
+    {
+      "text": "E8d?Mw(he,h.c):T",
+      "key": "template.e8d_mw_he_h_c_t",
+      "category": "oe_template",
+      "context": "HTML template text: <...>E8d?Mw(he,h.c):T<...>"
+    },
+    {
+      "text": "S8d?Mw(he,h.b):T",
+      "key": "template.s8d_mw_he_h_b_t",
+      "category": "oe_template",
+      "context": "HTML template text: <...>S8d?Mw(he,h.b):T<...>"
+    },
+    {
+      "text": "U.a?-1:L.a",
+      "key": "template.u_a_1_l_a",
+      "category": "oe_template",
+      "context": "HTML template text: <...>U.a?-1:L.a<...>"
+    },
+    {
+      "text": "U.b&&!b&&(L.a=U.b),L.d=-(L.a-U.b)/2,S.g){case 4:L.c=-L.b;break;case 2:L.c=U.a}gTo(T),fTo(T)}function O9v(h,b){var S,T,L,U,Q;if(!b.dc()){if(L=q(b.Xb(0),128),b.gc()==1){k4d(h,L,L,1,0,b);return}for(S=1;S",
+      "key": "template.u_b_b_l_a_u_b_l_d_l_a_u_b_2_s_g_case_4_l",
+      "category": "oe_template",
+      "context": "HTML template text: <...>U.b&&!b&&(L.a=U.b),L.d=-(L.a-U.b)/2,S.g){case 4:L.c=-L.b;break;case 2:L.c=U.a}gTo(T),fTo(T)}function O9v(h,b){var S,T,L,U,Q;if(!b.dc()){if(L=q(b.Xb(0),128),b.gc()==1){k4d(h,L,L,1,0,b);return}for(S=1;S<...>"
+    },
+    {
+      "text": "ae}),minIndegree:tOe(\"indegree\",function(V,ae){return V",
+      "key": "template.ae_minindegree_toe_indegree_function_v_ae_ret",
+      "category": "oe_template",
+      "context": "HTML template text: <...>ae}),minIndegree:tOe(\"indegree\",function(V,ae){return V<...>"
+    },
+    {
+      "text": "ae}),minOutdegree:tOe(\"outdegree\",function(V,ae){return V",
+      "key": "template.ae_minoutdegree_toe_outdegree_function_v_ae_r",
+      "category": "oe_template",
+      "context": "HTML template text: <...>ae}),minOutdegree:tOe(\"outdegree\",function(V,ae){return V<...>"
+    },
+    {
+      "text": "ae})}),qo(Jlt,{totalDegree:function(V){for(var ae=0,_e=this.nodes(),Me=0;Me",
+      "key": "template.ae_qo_jlt_totaldegree_function_v_for_var_ae",
+      "category": "oe_template",
+      "context": "HTML template text: <...>ae})}),qo(Jlt,{totalDegree:function(V){for(var ae=0,_e=this.nodes(),Me=0;Me<...>"
+    },
+    {
+      "text": "bt&&(Ye=we,bt=Te)}return Ye}function q$v(h,b,S){var T,L,U;if(h.e=S,h.d=0,h.b=0,h.f=1,h.i=b,(h.e&16)==16&&(h.i=xqv(h.i)),h.j=h.i.length,bg(h),U=kfe(h),h.d!=h.j)throw Gn(new Tm(Hm((Am(),C6d))));if(h.g){for(T=0;T",
+      "key": "template.bt_ye_we_bt_te_return_ye_function_q_v_h_b_s_va",
+      "category": "oe_template",
+      "context": "HTML template text: <...>bt&&(Ye=we,bt=Te)}return Ye}function q$v(h,b,S){var T,L,U;if(h.e=S,h.d=0,h.b=0,h.f=1,h.i=b,(h.e&16)==16&&(h.i=xqv(h.i)),h.j=h.i.length,bg(h),U=kfe(h),h.d!=h.j)throw Gn(new Tm(Hm((Am(),C6d))));if(h.g){for(T=0;T<...>"
+    },
+    {
+      "text": "he){for(Te=h.d,h.d=mr(xvc,puc,63,2*he+4,0,1),U=0;U",
+      "key": "template.he_for_te_h_d_h_d_mr_xvc_puc_63_2_he_4_0_1_u_0_u",
+      "category": "oe_template",
+      "context": "HTML template text: <...>he){for(Te=h.d,h.d=mr(xvc,puc,63,2*he+4,0,1),U=0;U<...>"
+    },
+    {
+      "text": "k8d?Mw(he,h.d):T",
+      "key": "template.k8d_mw_he_h_d_t",
+      "category": "oe_template",
+      "context": "HTML template text: <...>k8d?Mw(he,h.d):T<...>"
+    },
+    {
+      "text": "INSIDE_SELF_LOOPS\",1),pMn=new EOe(\"MULTI_EDGES\",2),hMn=new EOe(\"EDGE_LABELS\",3),_Lo=new EOe(\"PORTS\",4),dMn=new EOe(\"COMPOUND\",5),uMn=new EOe(\"CLUSTERS\",6),wLo=new EOe(\"DISCONNECTED\",7)}function $Fd(h,b){var S,T,L;if(b==0)return(h.a[0]&1)!=0;if(b<0)throw Gn(new ITn(\"Negative bit address",
+      "key": "template_full.inside_self_loops_1_pmn_new_eoe_multi_edges_2",
       "category": "oe_template_full",
       "context": "Full template text (tags removed)"
     },
     {
-      "text": "$ / $ on-demand usage",
-      "key": "template_full.on_demand_usage",
+      "text": "at index \"+S));return b=h,new eF(b)}function b2v(h,b){var S;if(S=BNt(h.Tg(),b),Ni(S,99))return q(S,18);throw Gn(new Pu(Ose+b+\"' is not a valid reference",
+      "key": "template_full.at_index_s_return_b_h_new_ef_b_function_b2v_h",
       "category": "oe_template_full",
       "context": "Full template text (tags removed)"
+    },
+    {
+      "text": "null key in entry: null=\"+b));if(b==null)throw Gn(new AOe(\"null value in entry: \"+h+\"=null",
+      "key": "template_full.null_key_in_entry_null_b_if_b_null_throw_gn",
+      "category": "oe_template_full",
+      "context": "Full template text (tags removed)"
+    },
+    {
+      "text": "renderer\",\"base",
+      "key": "template_full.renderer_base",
+      "category": "oe_template_full",
+      "context": "Full template text (tags removed)"
+    },
+    {
+      "text": "$(${A.id}) ${f.title}",
+      "key": "prop.a_id_f_title",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "$(${De.circleFilled.id}) ${p.replace(\"terminal.ansi\",\"\")}",
+      "key": "prop.de_circlefilled_id_p_replace_terminal_ans",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "$(output)",
+      "key": "prop.output",
+      "category": "property_value",
+      "context": "Property value in settings code"
     },
     {
       "text": "$(radio-tower) ${i}",
       "key": "prop.radio_tower_i",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "(Canceled)",
+      "key": "prop.canceled",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "(Rejected)",
+      "key": "prop.rejected",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -141,8 +1773,32 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "About ${pe}",
-      "key": "prop.about_pe",
+      "text": "(Skipped)",
+      "key": "prop.skipped",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": ",ai.yytext),",
+      "key": "prop.ai_yytext",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": ",ai.yytext),20;case 36:return li.getLogger().trace(",
+      "key": "prop.ai_yytext_20_case_36_return_li_getlogger_trace",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": ",r),!1}return t.document.body.removeChild(i),!0};kk();function Uzy({position:n=3}={}){const{showHover:e,hideHover:t}=ik();return{showHover:(r,s)=>{e({target:r.currentTarget,appearance:{compact:!0,showPointer:!0},content:s,position:{hoverPosition:n},additionalClasses:[",
+      "key": "prop.r_1_return_t_document_body_removechild_i_0_k",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "About ${ke}",
+      "key": "prop.about_ke",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -207,8 +1863,8 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Are you sure you want to remove the model \"${at.clientDisplayName??at.name}\"? You can add it back later.",
-      "key": "prop.are_you_sure_you_want_to_remove_the_model_at_cl",
+      "text": "Are you sure you want to remove the model \"${tt.clientDisplayName??tt.name}\"? You can add it back later.",
+      "key": "prop.are_you_sure_you_want_to_remove_the_model_tt_cl",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -225,13 +1881,13 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Automatically jump to the next diff when accepting changes with ${Rs?\"\\u2318\":\"Ctrl+\"}Y",
+      "text": "Automatically jump to the next diff when accepting changes with ${Fs?\"\\u2318\":\"Ctrl+\"}Y",
       "key": "prop.automatically_jump_to_the_next_diff_when_accepting",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Automatically parse links when pasted into Quick Edit (${Rs?\"\\u2318\":\"Ctrl+\"}K) input",
+      "text": "Automatically parse links when pasted into Quick Edit (${Fs?\"\\u2318\":\"Ctrl+\"}K) input",
       "key": "prop.automatically_parse_links_when_pasted_into_quick_e",
       "category": "property_value",
       "context": "Property value in settings code"
@@ -243,32 +1899,44 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Chat exported to ${K.fsPath}",
-      "key": "prop.chat_exported_to_k_fspath",
+      "text": "Channel name '${n.channelName}' timed out after ${this.timeoutDelay}ms",
+      "key": "prop.channel_name_n_channelname_timed_out_after",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Choose the visibility level for snapshot ${n.snapshotId}:",
-      "key": "prop.choose_the_visibility_level_for_snapshot_n_snaps",
+      "text": "Chat exported to ${z.fsPath}",
+      "key": "prop.chat_exported_to_z_fspath",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Command '${p}' created successfully in ${P} commands directory: ${F.fsPath}",
-      "key": "prop.command_p_created_successfully_in_p_comman",
+      "text": "Command '${p}' created successfully in ${N} commands directory: ${O.fsPath}",
+      "key": "prop.command_p_created_successfully_in_n_comman",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Confirm",
-      "key": "prop.confirm",
+      "text": "Condition when the debug visualizer is applicable",
+      "key": "prop.condition_when_the_debug_visualizer_is_applicable",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Copy ${v.baseBranch}",
-      "key": "prop.copy_v_basebranch",
+      "text": "Copy ${A.baseBranch}",
+      "key": "prop.copy_a_basebranch",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Create",
+      "key": "prop.create",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Created manual rule '${f}' in .cursor/rules. Attach it explicitly when you want it applied.",
+      "key": "prop.created_manual_rule_f_in_cursor_rules_attac",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -291,6 +1959,12 @@
       "context": "Property value in settings code"
     },
     {
+      "text": "Determines the markup language of the output.",
+      "key": "prop.determines_the_markup_language_of_the_output",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
       "text": "Development",
       "key": "prop.development",
       "category": "property_value",
@@ -309,6 +1983,18 @@
       "context": "Property value in settings code"
     },
     {
+      "text": "From COPILOT:",
+      "key": "prop.from_copilot",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "If non-zero, all user-specified sizes, e.g. in \\\\rule{500em}{500em}, will be capped to maxSize ems. Otherwise, elements and spaces can be arbitrarily large",
+      "key": "prop.if_non_zero_all_user_specified_sizes_e_g_in_r",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
       "text": "Keep",
       "key": "prop.keep",
       "category": "property_value",
@@ -321,8 +2007,26 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Local",
-      "key": "prop.local",
+      "text": "Limit the number of macro expansions to the specified number, to prevent e.g. infinite macro loops. If set to Infinity, the macro expander will try to fully expand as in LaTeX.",
+      "key": "prop.limit_the_number_of_macro_expansions_to_the_specif",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "MCP App wants to call \"${yt}\" on \"${Dt}\".",
+      "key": "prop.mcp_app_wants_to_call_yt_on_dt",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Makes \\\\color behave like LaTeX's 2-argument \\\\textcolor, instead of LaTeX's one-argument \\\\color mode change.",
+      "key": "prop.makes_color_behave_like_latex_s_2_argument_tex",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Name of the debug visualizer",
+      "key": "prop.name_of_the_debug_visualizer",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -333,8 +2037,26 @@
       "context": "Property value in settings code"
     },
     {
+      "text": "No secondary text",
+      "key": "prop.no_secondary_text",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "No selection precursor",
+      "key": "prop.no_selection_precursor",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
       "text": "Open",
       "key": "prop.open",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "PDF file is too large (${(ta.size/(1024*1024)).toFixed(2)}MB). Maximum size is 10MB.",
+      "key": "prop.pdf_file_is_too_large_ta_size_1024_1024_tof",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -345,14 +2067,20 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Preview Box for Terminal ${Rs?\"\\u2318\":\"Ctrl+\"}K",
-      "key": "prop.preview_box_for_terminal_rs_u2318_ctrl_k",
+      "text": "Plugin \"${Is.pluginName}\" could not be found. It may have been removed from the marketplace.",
+      "key": "prop.plugin_is_pluginname_could_not_be_found_it_m",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Projects",
-      "key": "prop.projects",
+      "text": "Potential issue detected (FAKE DEV MODE)",
+      "key": "prop.potential_issue_detected_fake_dev_mode",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Preview Box for Terminal ${Fs?\"\\u2318\":\"Ctrl+\"}K",
+      "key": "prop.preview_box_for_terminal_fs_u2318_ctrl_k",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -363,20 +2091,62 @@
       "context": "Property value in settings code"
     },
     {
+      "text": "Render View Zone",
+      "key": "prop.render_view_zone",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Render display math flush left.",
+      "key": "prop.render_display_math_flush_left",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Render display math in leqno style (left-justified tags).",
+      "key": "prop.render_display_math_in_leqno_style_left_justified",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Render math in display mode, which puts the math in display style (so \\\\int and \\\\sum are large, for example), and centers the math on the page on its own line.",
+      "key": "prop.render_math_in_display_mode_which_puts_the_math_i",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Resubmit for all ${Nw} agents?",
+      "key": "prop.resubmit_for_all_nw_agents",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
       "text": "Reverting will also affect ${i.size} change${i.size>1?\"s\":\"\"} from other chat${r.size>1?\"s\":\"\"}.",
       "key": "prop.reverting_will_also_affect_i_size_change_i_siz",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Rule '${p}' created successfully in ${P} rules directory: ${F.fsPath}",
-      "key": "prop.rule_p_created_successfully_in_p_rules_dir",
+      "text": "Rule '${p}' created successfully in ${N} rules directory: ${O.fsPath}",
+      "key": "prop.rule_p_created_successfully_in_n_rules_dir",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "Show a hint for ${Rs?\"\\u2318\":\"Ctrl+\"}K in the Terminal",
-      "key": "prop.show_a_hint_for_rs_u2318_ctrl_k_in_the_ter",
+      "text": "Show ${Math.min(Y.length-B,Fyn)} more",
+      "key": "prop.show_math_min_y_length_b_fyn_more",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Show ${Math.min(j.length-N,Fyn)} more",
+      "key": "prop.show_math_min_j_length_n_fyn_more",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Show a hint for ${Fs?\"\\u2318\":\"Ctrl+\"}K in the Terminal",
+      "key": "prop.show_a_hint_for_fs_u2318_ctrl_k_in_the_ter",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -387,32 +2157,44 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "Submit with ${Rs?\"\\u2318 + \":\"Ctrl + \"}Enter",
-      "key": "prop.submit_with_rs_u2318_ctrl_enter",
+      "text": "Specifies a minimum thickness, in ems, for fraction lines, `\\\\sqrt` top lines, `{array}` vertical lines, `\\\\hline`, `\\\\hdashline`, `\\\\underline`, `\\\\overline`, and the borders of `\\\\fbox`, `\\\\boxed`, and `\\\\fcolorbox`.",
+      "key": "prop.specifies_a_minimum_thickness_in_ems_for_fractio",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "The snapshot ${g.snapshot} will be shared with anyone who has write permissions to ${v} on GitHub.",
-      "key": "prop.the_snapshot_g_snapshot_will_be_shared_with_any",
+      "text": "Submit with ${Fs?\"\\u2318 + \":\"Ctrl + \"}Enter",
+      "key": "prop.submit_with_fs_u2318_ctrl_enter",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "The snapshot ${n.snapshotId} will be made PUBLIC and accessible to anyone on the internet.",
-      "key": "prop.the_snapshot_n_snapshotid_will_be_made_public_a",
+      "text": "This is a fake bug generated for frontend development. The agent_review_fake_dev feature flag is enabled.",
+      "key": "prop.this_is_a_fake_bug_generated_for_frontend_developm",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "The snapshot ${n.snapshotId} will be shared with anyone who has write permissions to ${m} on GitHub.",
-      "key": "prop.the_snapshot_n_snapshotid_will_be_shared_with_a",
+      "text": "This will permanently delete the folder ~/.cursor/plugins/local/${on}. This cannot be undone.",
+      "key": "prop.this_will_permanently_delete_the_folder_cursor",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "This will delete the project \"${D.name}\" and all its attached composers.",
-      "key": "prop.this_will_delete_the_project_d_name_and_all_i",
+      "text": "Trust the input, enabling all HTML features such as \\\\url.",
+      "key": "prop.trust_the_input_enabling_all_html_features_such_a",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Turn on strict / LaTeX faithfulness mode, which throws an error if the input uses features that are not supported by LaTeX.",
+      "key": "prop.turn_on_strict_latex_faithfulness_mode_which_th",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Unable to get code selection",
+      "key": "prop.unable_to_get_code_selection",
       "category": "property_value",
       "context": "Property value in settings code"
     },
@@ -423,20 +2205,206 @@
       "context": "Property value in settings code"
     },
     {
-      "text": "When enabled, ${Rs?\"\\u2318 + \":\"Ctrl + \"}Enter submits chat and Enter inserts a newline",
-      "key": "prop.when_enabled_rs_u2318_ctrl_enter_sub",
+      "text": "When enabled, ${Fs?\"\\u2318 + \":\"Ctrl + \"}Enter submits chat and Enter inserts a newline",
+      "key": "prop.when_enabled_fs_u2318_ctrl_enter_sub",
       "category": "property_value",
       "context": "Property value in settings code"
     },
     {
-      "text": "[patch-graph] File content mismatch after reload: ${o.fileUri.fsPath}",
-      "key": "prop.patch_graph_file_content_mismatch_after_reload",
+      "text": "Yes, delete ${f.length} chat(s)",
+      "key": "prop.yes_delete_f_length_chat_s",
       "category": "property_value",
       "context": "Property value in settings code"
+    },
+    {
+      "text": "You're on ${O}. Would you like to create a new branch before committing?",
+      "key": "prop.you_re_on_o_would_you_like_to_create_a_new_bra",
+      "category": "property_value",
+      "context": "Property value in settings code"
+    },
+    {
+      "text": "Adjacency [position=",
+      "key": "return.adjacency_position",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "AdjacencyList [node=",
+      "key": "return.adjacencylist_node",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "BarycenterState [node=",
+      "key": "return.barycenterstate_node",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "DoubleSummaryStatistics[count =",
+      "key": "return.doublesummarystatistics_count",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "IntSummaryStatistics[count =",
+      "key": "return.intsummarystatistics_count",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Layout Algorithm:",
+      "key": "return.layout_algorithm",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Layout Option:",
+      "key": "return.layout_option",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Layout Type:",
+      "key": "return.layout_type",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Loading\\u2026",
+      "key": "return.loading_u2026",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M145 0 H188 V",
+      "key": "return.m145_0_h188_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M145 15 v585 v",
+      "key": "return.m145_15_v585_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M257 0 H300 V",
+      "key": "return.m257_0_h300_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M263 0 H347 V",
+      "key": "return.m263_0_h347_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M263,",
+      "key": "return.m263",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M291 0 H417 V",
+      "key": "return.m291_0_h417_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M312 0 H355 V",
+      "key": "return.m312_0_h355_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M319 0 H403 V",
+      "key": "return.m319_0_h403_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M319 602 V0 H403 V602 v",
+      "key": "return.m319_602_v0_h403_v602_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M347 1759 V0 H0 V84 H263 V1759 v",
+      "key": "return.m347_1759_v0_h0_v84_h263_v1759_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M384 0 H504 V",
+      "key": "return.m384_0_h504_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M403 1759 V84 H666 V0 H319 V1759 v",
+      "key": "return.m403_1759_v84_h666_v0_h319_v1759_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M424,",
+      "key": "return.m424",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M457 0 H583 V",
+      "key": "return.m457_0_h583_v",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M473,",
+      "key": "return.m473",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "M95,",
+      "key": "return.m95",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "NEdge[id=",
+      "key": "return.nedge_id",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "NodeInfo [connectedEdges=",
+      "key": "return.nodeinfo_connectededges",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Optional.absent()",
+      "key": "return.optional_absent",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "Rect[x=",
+      "key": "return.rect_x",
+      "category": "return_value",
+      "context": "Return value string in settings code"
     },
     {
       "text": "Run Everything",
       "key": "return.run_everything",
+      "category": "return_value",
+      "context": "Return value string in settings code"
+    },
+    {
+      "text": "State: mv=",
+      "key": "return.state_mv",
       "category": "return_value",
       "context": "Return value string in settings code"
     },
