@@ -1,0 +1,48 @@
+{
+  "version": "3.0.12",
+  "total": 7,
+  "hints": [
+    {
+      "text": "Commands that can run automatically${a().isAdminControlled?\" (controlled by admin)\":D()?",
+      "category": "getter_template",
+      "matched_ko_original": "Commands that can run automatically",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "MCP tools that can run automatically. Format: 'server:tool', 'server:*' for all tools from a server, '*:tool' for a tool from any server, or *:* for all tools from all servers${a().isAdminControlled?\" (controlled by admin)\":T()?",
+      "category": "getter_template",
+      "matched_ko_original": "MCP tools that can run automatically. Format: 'server:tool', 'server:*' for all tools from a server, '*:tool' for a tool from any server, or *:* for all tools from all servers",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "Prevent Agent from automatically running Browser tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "category": "getter_template",
+      "matched_ko_original": "Prevent Agent from automatically running Browser tools",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "Prevent Agent from automatically running MCP tools${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "category": "getter_template",
+      "matched_ko_original": "Prevent Agent from automatically running MCP tools",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "Prevent Agent from creating or modifying files outside of the workspace automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "category": "getter_template",
+      "matched_ko_original": "Prevent Agent from creating or modifying files outside of the workspace automatically",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "Prevent Agent from deleting files automatically${a().isAdminControlled?\" (controlled by admin)\":\"\"}",
+      "category": "getter_template",
+      "matched_ko_original": "Prevent Agent from deleting files automatically",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    },
+    {
+      "text": "Verify extension signatures when installing and loading extensions. May require an editor restart to take effect.${t()?\" (controlled by admin)\":\"\"}",
+      "category": "getter_template",
+      "matched_ko_original": "Verify extension signatures when installing and loading extensions. May require an editor restart to take effect.",
+      "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장."
+    }
+  ]
+}

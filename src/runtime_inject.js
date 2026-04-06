@@ -4,9 +4,15 @@
 
   var SETTINGS_SELECTORS = [
     '.cursor-settings-layout-main',
+    '.cursor-settings-pane-outer-wrapper',
+    '.cursor-settings-pane-content',
     '.settings-editor',
     '.cursor-settings-container',
-    '.monaco-dialog-box'
+    '.monaco-dialog-box',
+    '.agent-sidebar',
+    '[class*="agent-sidebar"]',
+    '.plan-agent-list',
+    '.marketplace-editor__sidebar'
   ];
   var _applied = new WeakSet();
 
@@ -95,10 +101,74 @@
     }
   }
 
-  function translateAll(root) {
+  /** 라이트 DOM + 모든 하위 Shadow 트리(중첩 포함)에 번역 적용 */
+  function translateOneTree(root) {
+    if (!root) return;
     translateTextNodes(root);
     translateAttributes(root);
     translateSelectOptions(root);
+    if (!root.querySelectorAll) return;
+    var all = root.querySelectorAll('*');
+    for (var i = 0; i < all.length; i++) {
+      if (all[i].shadowRoot) {
+        translateOneTree(all[i].shadowRoot);
+      }
+    }
+  }
+
+  function translateAll(root) {
+    translateOneTree(root);
+  }
+
+  function attachKoObserver(el) {
+    if (!el || el.__koObserver) return;
+    el.__koObserver = new MutationObserver(function(mutations) {
+      for (var m = 0; m < mutations.length; m++) {
+        var mut = mutations[m];
+        if (mut.type === 'childList') {
+          for (var a = 0; a < mut.addedNodes.length; a++) {
+            var added = mut.addedNodes[a];
+            if (added.nodeType === 1) {
+              translateAll(added);
+              attachObserversDeep(added);
+            }
+            else if (added.nodeType === 3 && !_applied.has(added)) {
+              var txt = added.textContent;
+              for (var i = 0; i < _dict.length; i++) {
+                if (matchEntry(txt, _dict[i])) {
+                  added.textContent = applyEntry(txt, _dict[i]);
+                  _applied.add(added);
+                  break;
+                }
+              }
+            }
+          }
+        } else if (mut.type === 'characterData' && !_applied.has(mut.target)) {
+          var cTxt = mut.target.textContent;
+          for (var ci = 0; ci < _dict.length; ci++) {
+            if (matchEntry(cTxt, _dict[ci])) {
+              mut.target.textContent = applyEntry(cTxt, _dict[ci]);
+              _applied.add(mut.target);
+              break;
+            }
+          }
+        }
+      }
+    });
+    el.__koObserver.observe(el, { childList: true, subtree: true, characterData: true });
+  }
+
+  /** Shadow 루트에도 옵저버를 붙여 내부 텍스트 변경을 감지 */
+  function attachObserversDeep(root) {
+    if (!root) return;
+    attachKoObserver(root);
+    if (!root.querySelectorAll) return;
+    var nodes = root.querySelectorAll('*');
+    for (var i = 0; i < nodes.length; i++) {
+      if (nodes[i].shadowRoot) {
+        attachObserversDeep(nodes[i].shadowRoot);
+      }
+    }
   }
 
   function init() {
@@ -110,37 +180,7 @@
         var el = targets[t];
         translateAll(el);
         if (!el.__koObserver) {
-          el.__koObserver = new MutationObserver(function(mutations) {
-            for (var m = 0; m < mutations.length; m++) {
-              var mut = mutations[m];
-              if (mut.type === 'childList') {
-                for (var a = 0; a < mut.addedNodes.length; a++) {
-                  var added = mut.addedNodes[a];
-                  if (added.nodeType === 1) translateAll(added);
-                  else if (added.nodeType === 3 && !_applied.has(added)) {
-                    var txt = added.textContent;
-                    for (var i = 0; i < _dict.length; i++) {
-                      if (matchEntry(txt, _dict[i])) {
-                        added.textContent = applyEntry(txt, _dict[i]);
-                        _applied.add(added);
-                        break;
-                      }
-                    }
-                  }
-                }
-              } else if (mut.type === 'characterData' && !_applied.has(mut.target)) {
-                var cTxt = mut.target.textContent;
-                for (var ci = 0; ci < _dict.length; ci++) {
-                  if (matchEntry(cTxt, _dict[ci])) {
-                    mut.target.textContent = applyEntry(cTxt, _dict[ci]);
-                    _applied.add(mut.target);
-                    break;
-                  }
-                }
-              }
-            }
-          });
-          el.__koObserver.observe(el, { childList: true, subtree: true, characterData: true });
+          attachObserversDeep(el);
         }
       }
     }

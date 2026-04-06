@@ -32,8 +32,9 @@ python3 src/repatch.py
 
 이 명령은:
 - 이전 패치 복원
-- 새 버전 문자열 추출 → `translations/strings.json`
+- 새 버전 문자열 추출 → `translations/strings.json` (Solid `Fe("…")` HTML 템플릿 텍스트 포함)
 - 미번역 문자열 감지 → `translations/untranslated.json`
+- `ko.json`과 추출본이 `${…}` 접미사만 다른 경우 힌트 → `translations/untranslated_hints.json` (있을 때만)
 - 소스 패치(`translations/ko.json`) 적용
 - 런타임 번역(`translations/runtime_ko.json`) JS 주입
 

@@ -137,33 +137,30 @@ def apply_patch(
                     section = section.replace(search, replace)
                     count += occurrences
 
-            if count == 0:
-                search = f">{escaped_original}<"
-                replace = f">{escaped_translated}<"
+            # HTML/Solid Fe() fragments: >Text</span>, >Text"), — must run even when
+            # description:"Text" was already replaced (otherwise subtitles stay English).
+            search = f">{escaped_original}<"
+            replace = f">{escaped_translated}<"
+            occurrences = section.count(search)
+            if occurrences > 0:
+                section = section.replace(search, replace)
+                count += occurrences
+
+            for ending in ['"', '`', ")", "<"]:
+                search = f">{escaped_original}{ending}"
+                replace = f">{escaped_translated}{ending}"
                 occurrences = section.count(search)
                 if occurrences > 0:
                     section = section.replace(search, replace)
                     count += occurrences
 
-            if count == 0:
-                for ending in ['"', '`', ")", "<"]:
-                    search = f">{escaped_original}{ending}"
-                    replace = f">{escaped_translated}{ending}"
-                    occurrences = section.count(search)
-                    if occurrences > 0:
-                        section = section.replace(search, replace)
-                        count += occurrences
-                        break
-
-            if count == 0:
-                for prefix in ["<div>", "<span>", "<button>", "<b>", "<strong>"]:
-                    search = f"{prefix}{escaped_original}"
-                    replace = f"{prefix}{escaped_translated}"
-                    occurrences = section.count(search)
-                    if occurrences > 0:
-                        section = section.replace(search, replace)
-                        count += occurrences
-                        break
+            for prefix in ["<div>", "<span>", "<button>", "<b>", "<strong>"]:
+                search = f"{prefix}{escaped_original}"
+                replace = f"{prefix}{escaped_translated}"
+                occurrences = section.count(search)
+                if occurrences > 0:
+                    section = section.replace(search, replace)
+                    count += occurrences
 
             if count > 0:
                 stats["applied"] += 1

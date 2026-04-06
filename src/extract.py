@@ -2,6 +2,8 @@
 """
 Cursor Settings 페이지에서 번역 대상 문자열을 추출하는 스크립트.
 
+Solid `Fe("<...>텍스트</...>")` 템플릿 조각은 `extract_fe_templates`에서 `>텍스트<` 단위로 추출한다.
+
 사용법:
     python3 src/extract.py [--output translations/strings.json]
 """
@@ -98,6 +100,51 @@ def extract_tab_names(section: str) -> list[dict]:
             "category": "tab_name",
             "context": f"WPl tab label for '{key}'",
         })
+    return results
+
+
+def _iter_fe_double_quoted_html(section: str):
+    """Solid `Fe(\"<...>텍스트</...>\")` 인자 문자열을 순회 (미니파이 번들은 내부에 비이스케이프 \" 없음)."""
+    prefix = 'Fe("'
+    i = 0
+    n = len(section)
+    while True:
+        idx = section.find(prefix, i)
+        if idx == -1:
+            return
+        start = idx + len(prefix)
+        j = start
+        while j < n:
+            if section[j] == "\\":
+                j += 2
+                continue
+            if section[j] == '"':
+                yield section[start:j]
+                i = j + 1
+                break
+            j += 1
+        else:
+            i = start + 1
+
+
+def extract_fe_templates(section: str) -> list[dict]:
+    """Solid Fe(\"...\") HTML 템플릿 조각에서 >텍스트< 노출 문자열 추출 (Oe()는 Cursor 3.x 설정에 거의 없음)."""
+    results = []
+    seen = set()
+
+    for template in _iter_fe_double_quoted_html(section):
+        texts_in_tags = re.findall(r">([^<>]{2,})<", template)
+        for text in texts_in_tags:
+            text = text.strip()
+            if text and text not in seen and _is_translatable(text):
+                seen.add(text)
+                results.append({
+                    "text": text,
+                    "key": f"fe_template.{_make_key(text)}",
+                    "category": "fe_template",
+                    "context": "Solid Fe() HTML template text: <...>{text}<...>",
+                })
+
     return results
 
 
@@ -281,6 +328,7 @@ def extract_all(workbench_path: str) -> list[dict]:
     extractors = [
         extract_tab_names,
         extract_oe_templates,
+        extract_fe_templates,
         extract_property_values,
         extract_getter_templates,
         extract_return_values,
@@ -311,16 +359,43 @@ def main():
         default=None,
         help="Cursor 앱 경로 (default: 자동 탐색)",
     )
+    parser.add_argument(
+        "--workbench",
+        default=None,
+        help="workbench.desktop.main.js 절대 경로 (지정 시 우선; 패치로 깨진 번들 대신 .bak 추출용)",
+    )
     args = parser.parse_args()
 
-    app_path = args.cursor_path or find_cursor_path()
-    workbench_path = os.path.join(app_path, WORKBENCH_REL)
-
-    if not os.path.exists(workbench_path):
-        print(f"오류: {workbench_path} 파일을 찾을 수 없습니다.", file=sys.stderr)
-        sys.exit(1)
-
-    version = get_cursor_version(app_path)
+    if args.workbench:
+        workbench_path = os.path.abspath(args.workbench)
+        if not os.path.exists(workbench_path):
+            print(f"오류: {workbench_path} 파일을 찾을 수 없습니다.", file=sys.stderr)
+            sys.exit(1)
+        app_path = args.cursor_path
+        version = "unknown"
+        if app_path and os.path.exists(os.path.join(app_path, PRODUCT_JSON_REL)):
+            version = get_cursor_version(app_path)
+        else:
+            parent = Path(workbench_path).resolve().parent
+            for _ in range(8):
+                pj = parent / PRODUCT_JSON_REL
+                if pj.is_file():
+                    with open(pj, "r", encoding="utf-8") as f:
+                        version = json.load(f).get("version", "unknown")
+                    app_path = str(parent)
+                    break
+                if parent == parent.parent:
+                    break
+                parent = parent.parent
+        if app_path is None:
+            app_path = "(workbench 직접 지정)"
+    else:
+        app_path = args.cursor_path or find_cursor_path()
+        workbench_path = os.path.join(app_path, WORKBENCH_REL)
+        if not os.path.exists(workbench_path):
+            print(f"오류: {workbench_path} 파일을 찾을 수 없습니다.", file=sys.stderr)
+            sys.exit(1)
+        version = get_cursor_version(app_path)
     print(f"Cursor 버전: {version}")
     print(f"Workbench 파일: {workbench_path}")
 

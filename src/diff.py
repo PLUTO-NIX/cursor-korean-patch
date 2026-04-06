@@ -69,6 +69,55 @@ def find_untranslated(strings_path: str, ko_path: str) -> list[dict]:
     return untranslated
 
 
+def find_untranslated_prefix_hints(strings_path: str, ko_path: str) -> list[dict]:
+    """
+    추출 문자열은 `${...}` 접미사가 붙었는데 ko.json에는 접두사만 있는 경우 등,
+    번역 누락 원인을 추적하기 위한 힌트 목록 (미번역 개수 자체는 줄이지 않음).
+    """
+    with open(strings_path, "r", encoding="utf-8") as f:
+        strings_data = json.load(f)
+    strings = strings_data.get("strings", [])
+
+    with open(ko_path, "r", encoding="utf-8") as f:
+        ko_data = json.load(f)
+    translations = ko_data.get("translations", [])
+    translated_originals = {t["original"] for t in translations}
+    originals_by_len = sorted(translated_originals, key=len, reverse=True)
+
+    hints = []
+    seen = set()
+    for s in strings:
+        text = s["text"]
+        if text in translated_originals or text in seen:
+            continue
+        if "${" not in text:
+            continue
+
+        base = text.split("${", 1)[0]
+        if base in translated_originals:
+            hints.append({
+                "text": text,
+                "category": s.get("category"),
+                "matched_ko_original": base,
+                "note": "접두사만 ko.json에 있음. 패치하려면 전체 문자열을 original로 두고 match_type: exact 권장.",
+            })
+            seen.add(text)
+            continue
+
+        for orig in originals_by_len:
+            if text.startswith(orig) and len(text) > len(orig) and text[len(orig) :].startswith("${"):
+                hints.append({
+                    "text": text,
+                    "category": s.get("category"),
+                    "matched_ko_original": orig,
+                    "note": "ko 원문이 접두사로만 일치. 카피 변경 또는 동적 접미사 추가 가능성.",
+                })
+                seen.add(text)
+                break
+
+    return hints
+
+
 def main():
     parser = argparse.ArgumentParser(description="Cursor 문자열 버전 비교")
     subparsers = parser.add_subparsers(dest="command")
@@ -82,6 +131,10 @@ def main():
     untrans_parser.add_argument("--strings", "-s", default="translations/strings.json")
     untrans_parser.add_argument("--ko", "-k", default="translations/ko.json")
     untrans_parser.add_argument("--output", "-o", help="결과 저장 경로")
+    untrans_parser.add_argument(
+        "--hints-output",
+        help="접두사/동적 접미사 힌트 JSON 경로 (예: translations/untranslated_hints.json)",
+    )
 
     args = parser.parse_args()
 
@@ -121,14 +174,31 @@ def main():
         if len(untranslated) > 30:
             print(f"  ... +{len(untranslated)-30} more")
 
+        hints = find_untranslated_prefix_hints(args.strings, args.ko)
+        if hints:
+            print(f"\n동적 접미사/접두사 힌트: {len(hints)}개 (ko.json과 추출본 불일치 패턴)")
+
         if args.output:
+            version = None
+            try:
+                with open(args.strings, "r", encoding="utf-8") as sf:
+                    version = json.load(sf).get("version")
+            except OSError:
+                pass
             output_data = {
                 "total": len(untranslated),
                 "strings": untranslated,
             }
+            if version is not None:
+                output_data["version"] = version
             with open(args.output, "w", encoding="utf-8") as f:
                 json.dump(output_data, f, ensure_ascii=False, indent=2)
             print(f"\n결과 저장: {args.output}")
+
+        if args.hints_output:
+            with open(args.hints_output, "w", encoding="utf-8") as f:
+                json.dump({"total": len(hints), "hints": hints}, f, ensure_ascii=False, indent=2)
+            print(f"힌트 저장: {args.hints_output}")
 
     else:
         parser.print_help()

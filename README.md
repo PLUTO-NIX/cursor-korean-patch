@@ -47,6 +47,12 @@ python3 src/extract.py                         # 문자열 추출
 python3 src/patch.py -d translations/ko.json  # 패치 적용 (runtime_ko.json 자동 포함)
 ```
 
+패치가 이미 적용된 `workbench.desktop.main.js`만 있고 섹션 마커가 깨진 경우, **원본 백업**에서 추출합니다.
+
+```bash
+python3 src/extract.py --workbench "/path/to/Cursor/resources/app/out/vs/workbench/workbench.desktop.main.js.bak" -o translations/strings.json
+```
+
 ### 경로 직접 지정 (자동 탐지 실패 시)
 
 ```bash
@@ -78,7 +84,7 @@ python3 src/patch.py -d translations/ko.json --dry-run
 Cursor 업데이트 시 `workbench.desktop.main.js`가 덮어씌워집니다.
 
 1. `python3 src/repatch.py` 실행
-2. `translations/untranslated.json`에 신규 문자열이 있으면 번역
+2. `translations/untranslated.json`에 신규 문자열이 있으면 번역 (`untranslated_hints.json`은 `${...}` 접미사 등으로 `ko.json`과 안 맞을 때 참고)
 3. 번역 결과를 `ko.json` 또는 `runtime_ko.json`에 추가 (아래 분류 기준 참고)
 4. `python3 src/repatch.py --translate-and-patch` 실행
 5. Cursor 재시작
@@ -105,7 +111,7 @@ Cursor 업데이트 시 `workbench.desktop.main.js`가 덮어씌워집니다.
 ```
 cursor-korean-patch/
 ├── src/
-│   ├── extract.py        # 문자열 추출 (getter, return, dropdown 등)
+│   ├── extract.py        # 문자열 추출 (Solid Fe() 템플릿, getter, return, dropdown 등)
 │   ├── patch.py          # 소스 패치 + 런타임 주입
 │   ├── repatch.py        # 통합 파이프라인 (권장)
 │   ├── diff.py           # 미번역 감지
@@ -117,7 +123,8 @@ cursor-korean-patch/
 │   ├── strings.json      # 추출된 영어 문자열
 │   ├── ko.json           # 소스 패치 번역 사전
 │   ├── runtime_ko.json   # 런타임 번역 사전
-│   └── untranslated.json # 미번역 문자열 (repatch 시 생성)
+│   ├── untranslated.json # 미번역 문자열 (repatch 시 생성)
+│   └── untranslated_hints.json # ko 접두사/동적 접미사 힌트 (있을 때만)
 ├── .cursor/rules/
 │   └── korean-patch.mdc  # 에이전트 재패치 지침
 ├── TRANSLATE_PROMPT.md    # AI 번역 에이전트 상세 지시사항

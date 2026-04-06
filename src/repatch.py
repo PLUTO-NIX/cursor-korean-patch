@@ -28,7 +28,7 @@ TRANSLATIONS_DIR = PROJECT_DIR / "translations"
 sys.path.insert(0, str(SCRIPT_DIR))
 from extract import find_cursor_path, get_cursor_version, extract_all, WORKBENCH_REL
 from patch import apply_patch, revert_file, backup_file, load_translation_dict
-from diff import find_untranslated
+from diff import find_untranslated, find_untranslated_prefix_hints
 
 
 def run_full_pipeline(apply: bool = True, cursor_path: Optional[str] = None):
@@ -68,6 +68,14 @@ def run_full_pipeline(apply: bool = True, cursor_path: Optional[str] = None):
     print("\n[3/5] 미번역 문자열 확인 중...")
     untranslated = find_untranslated(str(strings_path), str(ko_path))
     untranslated_path = TRANSLATIONS_DIR / "untranslated.json"
+    hints_path = TRANSLATIONS_DIR / "untranslated_hints.json"
+    hints = find_untranslated_prefix_hints(str(strings_path), str(ko_path))
+    if hints:
+        with open(hints_path, "w", encoding="utf-8") as f:
+            json.dump({"version": version, "total": len(hints), "hints": hints}, f, ensure_ascii=False, indent=2)
+        print(f"   접두사/동적 접미사 힌트: {len(hints)}개 → {hints_path}")
+    elif hints_path.exists():
+        hints_path.unlink()
 
     if untranslated:
         untranslated_data = {
